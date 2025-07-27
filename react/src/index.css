@@ -1,1 +1,46 @@
 @import "tailwindcss";
+@theme {
+    --font-MorabbaLight : "Morabba Light";
+    --font-MorabbaBold : "Morabba Bold";
+    --font-MorabbaMedium : "Morabba Medium";
+
+    --color-midnight: #032340; 
+    --color-orange-noraml: #FA541C; 
+    --color-blue-noraml: #FA541C; 
+    --color-black-noraml: #FA541C; 
+
+}
+
+@layer utilities {
+    .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-shadow {
+        box-shadow: 0px 0px 20px 2px #00000014;
+    }
+}
+
+
+
+@layer base {
+
+    body {
+        @apply font-MorabbaLight overflow-auto 
+    }
+
+    @font-face {
+        font-family: "Morabba Light";
+        src: url("../src/fonts/Morabba/woff2/Morabba-Light.woff2");
+    }
+    @font-face {
+        font-family: "Morabba Medium";
+        src: url("../src/fonts/Morabba/woff2/Morabba-Medium.woff2");
+    }
+    @font-face {
+        font-family: "Morabba Bold";
+        src: url("../src/fonts/Morabba/woff2/Morabba-Bold.woff2");
+    }
+    
+}
