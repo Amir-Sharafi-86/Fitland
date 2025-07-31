@@ -5,7 +5,7 @@ function NavMenu({title}) {
         <div>
             <div className="mt-10">
                 <div className="wrapper-menu ">
-                    <ul className='text-[#000306] text-base font-MorabbaBold flex justify-between bg-[#F9F9F9] py-4 px-10 rounded-2xl '>
+                    <ul className='text-[#000306] text-xs invisible lg:visible lg:text-base font-MorabbaBold flex justify-between bg-[#F9F9F9] py-4 px-10 rounded-2xl '>
                         <div className="left-menu flex gap-x-10">
                         <a href="">مردانه</a>
                             <a href="">زنانه</a>
