@@ -7,7 +7,7 @@ function Navbar() {
       <div className="wrapper-navbar flex   justify-between items-center gap-4">
     
     <div className="flex items-center gap-2  flex-col">
-      <img src="/images/header/logo.png" alt="" />
+      <img src="/public/images/header/logo.png" alt="" />
       <h6 className="text-sm text-[#868686] font-MorabbaBold">فروشگاه لوازم ورزشی فیت‌لند</h6>
     </div>
 
@@ -55,7 +55,7 @@ function Navbar() {
     </div>
       </div>
 
-        <NavMenu />
+        <NavMenu  />
        </div>
         </>
     )

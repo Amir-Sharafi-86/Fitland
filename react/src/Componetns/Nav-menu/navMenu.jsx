@@ -1,6 +1,6 @@
 import React from 'react'
 
-function NavMenu() {
+function NavMenu({title}) {
     return (
         <div>
             <div className="mt-10">

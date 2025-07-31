@@ -6,7 +6,7 @@ function Header() {
         <div>
     
             <Topbar />
-            <Navbar />
+            <Navbar  />
 
         </div>
     )
