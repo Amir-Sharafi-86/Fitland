@@ -3,12 +3,12 @@ import NavMenu from '../Nav-menu/navMenu'
 function Navbar() {
     return (
         <>
-       <div className="container px-6 pt-4 mx-auto lg:pt-9 header max-w-[1440px]">
+       <div className="container px-6 pt-4 mx-auto lg:pt-9 header max-w-[1440px] hidden md:block">
       <div className="wrapper-navbar flex   justify-between items-center gap-4">
     
     <div className="flex items-center gap-2  flex-col">
       <img src="/public/images/header/logo.png" alt="" />
-      <h6 className="text-sm text-[#868686] font-MorabbaBold">فروشگاه لوازم ورزشی فیت‌لند</h6>
+      <h6 className="text-sm text-[#868686] font-MorabbaBold whitespace-nowrap ">فروشگاه لوازم ورزشی فیت‌لند</h6>
     </div>
 
     <div className="w-[340px] sm:w-[400px]  lg:w-[600px] xl:max-w-[700px]">
@@ -37,7 +37,8 @@ function Navbar() {
     </div>
 
     <div className="shrink-0 flex gap-x-4">
-          <button className='bg-[#FFFFFF] flex-center gap-x-1.5 box-shadow rounded-xl p-2.5'>
+          <button className='bg-[#FFFFFF] flex  flex-center gap-x-1.5 shadow-helper-class rounded-xl p-2.5 '
+          >
            <span className='text-[#404040] text-sm md:text-base font-MorabbaBold '>ثبت‌ نام | ورود</span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -56,6 +57,42 @@ function Navbar() {
       </div>
 
         <NavMenu  />
+       </div>
+
+       {/* //? header menuMobile  */}
+       <div className='mobile-menu p-6 block md:hidden'>
+          <div className='flex justify-between items-center'>
+              <img src="/public/images/header/logo.png" className='w-[90px]' alt="" / >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-7">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+          </div>
+
+          <div className="w-full sm:w-[400px]  lg:w-[600px] xl:max-w-[700px] mx-auto mt-4">
+      <form action="">
+        <div className="relative w-full border border-[#CBCBCB] bg-[#F9F9F9] rounded-2xl">
+          <svg
+            className="absolute left-3 top-1/2 -translate-y-1/2 text-[#FA541C]"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#FA541C"
+              d="M11.5 21.75c-5.65 0-10.25-4.6-10.25-10.25S5.85 1.25 11.5 1.25s10.25 4.6 10.25 10.25-4.6 10.25-10.25 10.25m0-19c-4.83 0-8.75 3.93-8.75 8.75s3.92 8.75 8.75 8.75 8.75-3.93 8.75-8.75-3.92-8.75-8.75-8.75M21.998 22.75c-.19 0-.38-.07-.53-.22l-2-2a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l2 2c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22"
+            ></path>
+          </svg>
+          <input
+            type="text"
+            className="w-full pl-10 pr-4 py-2 bg-transparent outline-none placeholder:text-[#868686] font-MorabbaMedium"
+            placeholder="جستجو"
+          />
+        </div>
+      </form>
+    </div>
        </div>
         </>
     )

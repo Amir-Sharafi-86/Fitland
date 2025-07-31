@@ -4,8 +4,8 @@ function Herosection() {
     return (
         <>
             <div>
-            <div className="grid grid-cols-12 justify-between  mt-0 md:mt-8 ">
-                <div className="right-content font-MorabbaBold col-span-5 mx-auto  md:mr-8 ">
+            <div className="grid grid-cols-12 justify-between  mt-0 max-md:mt-12 max-md:items-center md:mt-8 ">
+                <div className="right-content font-MorabbaBold col-span-6  md:col-span-5 mx-auto  mr-8 ">
                 <div className='flex  flex-col'>
                     <span className='inline-block text-[#606060] text-base max-sm:text-xs'>راحت و مطمئن خرید کنید!</span>
                     <span className='inline-block text-midnight text-lg my-4 md:text-3xl '>همراه تو در مسیر سلامتی</span>
@@ -22,11 +22,11 @@ function Herosection() {
 
                 </button>
                 </div>
-                <div className='md :ml-[10rem] col-span-4 mx-auto'>
+                <div className='md :ml-[10rem]  col-span-6 md:col-span-4 mx-auto'>
                     <img src="/public/images/main/herosection.png" className='mx-auto' alt="" />
                 </div>
 
-                <div className=" space-y-6 mt-10 col-span-3 mx-auto md:ml-4">
+                <div className="space-y-6 mt-10 col-span-3 mx-auto md:ml-4 hidden md:block">
                     <div className='wrraper flex gap-5 items-center '>
                         <button className=' bg-[#EBF5FF] rounded-2xl p-5'>
                                 <img src="/public/images/main/calendar.png" alt="" />
