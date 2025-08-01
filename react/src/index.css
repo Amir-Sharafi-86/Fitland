@@ -9,9 +9,11 @@
     --color-blue-noraml: #FA541C; 
     --color-black-noraml: #FA541C; 
 
+
+    --breakpoint-xs : 480px;
 }
 
-@utilities {
+@layer utilities {
     .flex-center {
         display: flex;
         justify-content: center;

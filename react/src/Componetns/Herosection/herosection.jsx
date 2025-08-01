@@ -1,15 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import Typewriter from 'typewriter-effect';
 
+import 'aos/dist/aos.css';
 function Herosection() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2500,
+            once: false,     
+          });
+    } , [])
     return (
         <>
-            <div>
-            <div className="grid grid-cols-12 justify-between  mt-0 max-md:mt-12 max-md:items-center md:mt-12    ">
-                <div className="right-content font-MorabbaBold col-span-6  md:col-span-5 mx-auto  mr-8 ">
+            <div className='container'>
+            <div className="grid grid-cols-12  max-xs:items-start justify-between   mt-0 max-md:mt-12 max-md:items-center md:mt-12" data-aos="fade-left">
+                <div className="   right-content font-MorabbaBold col-span-6  md:col-span-5 mx-auto  md:mr-8 "  >
                 <div className='flex  flex-col'>
                     <span className='inline-block text-[#606060] text-base max-sm:text-xs'>راحت و مطمئن خرید کنید!</span>
-                    <span className='inline-block text-midnight text-lg my-4 md:text-3xl '>همراه تو در مسیر سلامتی</span>
+                    
+                    <span className='inline-block text-midnight max-xs:text-[15px] text-lg my-4 md:text-3xl max-sm:whitespace-nowrap'>
+  <Typewriter
+    options={{
+      strings: ['همراه تو در مسیر سلامتی'],
+      autoStart: true,
+      loop: true,
+      delay: 80,
+      deleteSpeed: 50,
+      cursor: '|',
+    }}
+  />
+</span>
+
+
                 </div>
+
                 <p className='text-orange-noraml  mb-4 text-lg md:text-3xl'>سهم بزرگ خودتان را امروز بگیرید! </p>
                 <span className='text-[#606060] text-base max-sm:text-xs block max-w-[440px]'>بزرگترین حراج فصل فیت لند همین حالا شرع کن و محصولات با یه تخفیف شگفت انگیز بخر!</span>
                 <button className='py-2 px-6 bg-midnight flex gap-x-2  items-center  rounded-md mt-4' >
@@ -23,7 +48,7 @@ function Herosection() {
                 </button>
                 </div>
                 <div className='md :ml-[10rem]  col-span-6 md:col-span-4 mx-auto'>
-                    <img src="/public/images/main/herosection.png" className='mx-auto' alt="" />
+                    <img src="/public/images/main/herosection.png" className='mx-auto max-xs:mr-5 md:mt-4.5  overflow-hidden ' alt="" />
                     
                 </div>
 
