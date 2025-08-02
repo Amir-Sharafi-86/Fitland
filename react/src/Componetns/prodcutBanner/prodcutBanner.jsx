@@ -2,17 +2,17 @@ import React from 'react'
 
 function ProdcutBanner() {
     return (
-        <div className='relative mt-[80px] '>
+        <div className='relative mt-[80px] hidden xl:block'>
 
 <div
   className="w-full  h-screen bg-[url('/images/main/baner.png')] bg-no-repeat  bg-contain"
 />
 
 
-      <div className='absolute right-[10rem] top-[10rem]'>
-      <span className='text-[#01070D] text-xl font-MorabbaMedium'>برای حال خوب</span>
+      <div className='absolute right-[10rem] text-2xl  top-[4rem] 2xl:top-[15.2rem]'>
+      <span className='text-[#01070D]  font-MorabbaMedium inline-block mb-1.5'>برای حال خوب</span>
       <p className='text-2xl font-MorabbaBold text-[#01070D] '>لوازم ایروبیک و تناسب اندام بگیر</p>
-      <button class="py-2 px-6 bg-midnight flex gap-x-2  items-center  rounded-md mt-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-white border border-white rounded-full p-0.5 "><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path></svg><a href="" class="text-white text-base max-sm:text-xs whitespace-nowrap max-sm:w-full font-MorabbaBold">مشاهده  محصولات</a></button>
+      <button class="py-2 px-6 bg-midnight flex  items-center   rounded-md mt-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white border border-white rounded-full p-0.5 "><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path></svg><a href="" class="text-white text-base max-sm:text-xs whitespace-nowrap max-sm:w-full py-2 px-6 font-MorabbaBold">مشاهده  محصولات</a></button>
 
       </div>
 

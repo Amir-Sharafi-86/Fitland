@@ -4,10 +4,10 @@ import ProductDetailsOne from '../productDetailsOne/productDetailsOne';
 
 function ProductOne() {
     return (
-        <div className='my-[80px] container flex  justify-between items-end gap-9'>
+        <div className='my-[80px] container flex  justify-center sm:justify-between items-end gap-4.5 md:gap-9'>
             <ProductDetailsOne  title="جدید ترین تخفیفات فصل برند نایک" text = " تخفیف روی تمام محصولات " img="/public/images/main/product.jpg" />
             <ProductDetailsOne  title="جدید ترین تخفیفات فصل برند پوما" text = " تخفیف روی تمام محصولات " img="/public/images/main/product2.png" />
-
+          
             
         <div className="title hidden lg:block">
             <p className='text-midnight text-sm md:text-2xl font-MorabbaBold mb-2.5'>جدید ترین محصولات</p>

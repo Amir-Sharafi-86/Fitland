@@ -22,7 +22,7 @@ function Herosection() {
                     <span className='inline-block text-midnight max-xs:text-[15px] text-lg my-4 md:text-3xl max-sm:whitespace-nowrap'>
   <Typewriter
     options={{
-      strings: ['همراه تو در مسیر سلامتی'],
+      strings: ['همراه تو در مسیر سلامتی'] ,
       autoStart: true,
       loop: true,
       delay: 80,
