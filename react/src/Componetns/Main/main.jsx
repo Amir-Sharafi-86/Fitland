@@ -1,6 +1,8 @@
 import React from 'react'
 import Herosection from '../Herosection/Herosection'
 import ProductOne from '../productOne/productOne'
+import ProdcutBanner from '../prodcutBanner/prodcutBanner'
+import ProductTwo from '../ProductTwo/productTwo'
 function Main() {
     return (
         <div>
@@ -8,6 +10,8 @@ function Main() {
                 <Herosection />
                 <ProductOne />
             </main>
+            <ProdcutBanner />
+                <ProductTwo />
         </div>
     )
 }
