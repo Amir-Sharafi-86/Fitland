@@ -11,7 +11,7 @@ function ProductTwo() {
     <div className='w-full bg-[#FFF7F4] py-20 '>
       <h1 className='text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold'>تخفیفات ویژه</h1>
       <div className='container mx-auto'>
-        <div className='relative flex gap-x-2.5 bottom-4.5'>  
+        <div className='relative flex gap-x-2.5 bottom-4.5  md:block'>  
         <button 
   className='cursor-pointer  rounded-full mb-8 p-2 swiper-button-next absolute top-1/2 right-0 w-10 h-10 -translate-y-1/2 z-20'
   type="button"
@@ -38,7 +38,7 @@ function ProductTwo() {
         <Swiper
           modules={[Autoplay, Navigation]}
           spaceBetween={20}
-          slidesPerView={3}
+          slidesPerView={2}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,

@@ -22,11 +22,14 @@ function Herosection() {
                     <span className='inline-block text-midnight max-xs:text-[15px] text-lg my-4 md:text-3xl max-sm:whitespace-nowrap'>
   <Typewriter
     options={{
-      strings: ['همراه تو در مسیر سلامتی'] ,
+      strings: [
+        'همراه تو در مسیر سلامتی' , 
+        'تضمین بهترین قیمت و کیفیت'
+      ] ,
       autoStart: true,
       loop: true,
       delay: 80,
-      deleteSpeed: 50,
+      deleteSpeed: 60,
       cursor: '|',
     }}
   />
@@ -58,8 +61,8 @@ function Herosection() {
                                 <img src="/public/images/main/calendar.png" alt="" />
                         </button>
                         <div className='flex flex-col whitespace-nowrap '>
-                            <span className='inline-block text-2xl'>+90</span>
-                            <span className='inline-block mt-0'>رضایت مشتری</span>
+                            <span className='inline-block text-2xl text-[#194165] font-MorabbaBold'>90+ </span>
+                            <span className='inline-block mt-0 font-MorabbaMedium text-[17px]'>رضایت مشتری</span>
                         </div>
                     </div>
                     <div className='wrraper flex gap-5 items-center'>
@@ -67,8 +70,8 @@ function Herosection() {
                                 <img src="/public/images/main/calendar.png" alt="" />
                         </button>
                         <div className='flex flex-col whitespace-nowrap '>
-                            <span className='inline-block text-[#194165] text-2xl'>+300</span>
-                            <span className='inline-block mt-0 text-[#404040]'>رضایت مشتری</span>
+                            <span className='inline-block text-[#194165] text-2xl font-MorabbaBold'>300+ </span>
+                            <span className='inline-block mt-0 text-[#404040] font-MorabbaMedium text-[17px]'>رضایت مشتری</span>
                         </div>
                     </div>
                     <div className='wrraper flex gap-5 items-center'>
@@ -76,8 +79,8 @@ function Herosection() {
                                 <img src="/public/images/main/calendar.png" alt="" />
                         </button>
                         <div className='flex flex-col whitespace-nowrap '>
-                            <span className='inline-block text-2xl'>+300</span>
-                            <span className='inline-block mt-0'>رضایت مشتری</span>
+                            <span className='inline-block text-2xl text-[#194165] font-MorabbaBold'>300+ </span>
+                            <span className='inline-block mt-0 font-MorabbaMedium text-[17px]'>رضایت مشتری</span>
                         </div>
                     </div>
                 </div>

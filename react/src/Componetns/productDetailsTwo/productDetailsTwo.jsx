@@ -3,12 +3,12 @@ import React from 'react'
 function ProductDetailsTwo(props) {
     return (
         <div  className={props.className}>
-                    <div className="box-prodcut pt-0 pb-13  border border-[#EDEDED] bg-white   ">
+                    <div className="box-prodcut pt-0 pb-20  border border-[#EDEDED] bg-white   ">
 
                         <div>
                             <img src={props.img} className='rounded-md' />
                         </div>
-                        <div className='flex flex-col  mt-3.5 text-[15px]  font-MorabbaMedium gap-y-3 px-3'>
+                        <div className='flex flex-col  mt-3.5 text-[15px]  font-MorabbaMedium gap-y-3 pr-4'>
                             <span className='text-[#01070D]'>{props.title}</span>
                             <span className='text-[#000306] text-sm'>{props.price}</span>
                             <span className='text-[#404040] text-xs'>{props.size}</span>
@@ -16,6 +16,11 @@ function ProductDetailsTwo(props) {
                         <div>
                             {/* //?codes */}
                             <div className="after-elem"></div>
+                        </div>
+                        <div className='flex mt-4 pr-4'>
+                            <div className="componetns bg-[#000306] size-4.5  rounded-full"></div>
+                            <div className="componetns bg-[#CBCBCB] size-4.5  rounded-full"></div>
+                            <div className="componetns bg-[#000306] size-4.5  rounded-full"></div>
                         </div>
                     </div>
 
