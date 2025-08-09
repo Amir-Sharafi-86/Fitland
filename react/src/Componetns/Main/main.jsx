@@ -11,7 +11,7 @@ function Main() {
                 <ProductOne />
             </main>
             <ProdcutBanner />
-                <ProductTwo />
+            <ProductTwo />
         </div>
     )
 }
