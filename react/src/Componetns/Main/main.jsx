@@ -4,6 +4,7 @@ import ProductOne from '../productOne/productOne'
 import ProdcutBanner from '../prodcutBanner/prodcutBanner'
 import ProductTwo from '../ProductTwo/productTwo'
 import ProductsTree from '../productsTree/productsTree'
+import BannerTwo from '../bannerTwo/bannerTwo'
 function Main() {
     return (
         <div>
@@ -14,6 +15,7 @@ function Main() {
             <ProdcutBanner />
             <ProductTwo />
             <ProductsTree />
+            <BannerTwo />
         </div>
     )
 }
