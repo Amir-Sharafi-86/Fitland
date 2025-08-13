@@ -1,14 +1,12 @@
-import React  , {useEffect}from 'react'
-import AOS from 'aos'
-function ProductDetailsTwo(props ,) {
-
-
+import React , {useEffect} from 'react'
+import AOS from 'aos';
+function ProdcutsDetailsTree(props) {
     useEffect(() => {
-            AOS.init({
-                // duration: 5000,
-                once: false,     
-              });
-        } , [])
+                AOS.init({
+                    // duration: 5000,
+                    once: false,     
+                  });
+            } , [])
     return (
         
         <div  className={props.className}>
@@ -51,4 +49,4 @@ function ProductDetailsTwo(props ,) {
     )
 }
 
-export default ProductDetailsTwo
+export default ProdcutsDetailsTree

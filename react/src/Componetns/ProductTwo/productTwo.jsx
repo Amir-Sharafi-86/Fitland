@@ -1,8 +1,7 @@
-import React from 'react';
+import React  from 'react';
 import ProductDetailsTwo from '../productDetailsTwo/productDetailsTwo';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -11,7 +10,7 @@ function ProductTwo() {
     <div className='w-full bg-[#FFF7F4] py-20 '>
       <h1 className='text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold'>تخفیفات ویژه</h1>
       <div className='container mx-auto'>
-        <div className='relative flex gap-x-2.5 bottom-4.5  md:block'>  
+        <div className='relative hidden md:flex gap-x-2.5 bottom-4.5  '>  
         <button 
   className='cursor-pointer  rounded-full mb-8 p-2 swiper-button-next absolute top-1/2 right-0 w-10 h-10 -translate-y-1/2 z-20'
   type="button"
@@ -57,6 +56,7 @@ function ProductTwo() {
               price="۳۰۰,۰۰۰ تومان"
               size="از سایز L تا XXL"
               img="/public/images/main/prodcuttwos.png"
+              isTrue = "true"
             />
           </SwiperSlide>
 
@@ -66,17 +66,24 @@ function ProductTwo() {
               price="۳۰۰,۰۰۰ تومان"
               size="از سایز L تا XXL"
               img="/public/images/main/prodcuttwos.png"
+              delay="0"
+              duration="800"
+              
             />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductDetailsTwo
-              title="کفش نایک مدل S-2000"
-              price="۲۰۰۰۰۰ تومان"
-              size="از سایز L تا XXL"
-              img="/public/images/main/mankan.png"
-            />
-          </SwiperSlide>
+  <ProductDetailsTwo
+    title="کفش نایک مدل S-2000"
+    price="۲۰۰۰۰۰ تومان"
+    size="از سایز L تا XXL"
+    img="/public/images/main/mankan.png"
+    delay="200"
+    duration="800"
+
+  />
+</SwiperSlide>
+
 
           <SwiperSlide>
             <ProductDetailsTwo
@@ -84,6 +91,8 @@ function ProductTwo() {
               price="۲۰۰۰۰۰ تومان"
               size="از سایز L تا XXL"
               img="/public/images/main/shoes.png"
+             delay="400"
+             duration="800"
             />
           </SwiperSlide>
         </Swiper>
