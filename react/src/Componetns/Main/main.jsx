@@ -8,6 +8,7 @@ import BannerTwo from '../bannerTwo/bannerTwo'
 import ProductsFour from '../productsFour/productsFour'
 import ProdcutFive from '../productFive/productFive'
 import BannerTree from '../bannerTree/bannerTree'
+import Exercise from '../exercise/exercise'
 function Main() {
     return (
         <div>
@@ -22,6 +23,7 @@ function Main() {
             <ProductsFour />
             <ProdcutFive />
             <BannerTree />
+            <Exercise />
         </div>
     )
 }

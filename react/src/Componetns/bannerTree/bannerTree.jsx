@@ -9,7 +9,7 @@ function BannerTree() {
         className="w-full h-screen bg-[url('/images/main/bannerTree.png')] bg-no-repeat bg-contain"
       />
 
-      <div className={`absolute right-[10rem] text-2xl top-[4rem] ${isStyle ? '2xl:top-[7.2rem] right-[15rem]'  : ''}`}>
+      <div className={`absolute right-[10rem] text-2xl top-[4rem] ${isStyle ? '2xl:top-[7.2rem] right-[18rem]'  : ''}`}>
         <span className="text-2xl font-MorabbaBold block max-w-[409px] text-white">
           بزودی کامل ترین مجموعه از لوازم کمپ در فیت لند
         </span>

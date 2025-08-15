@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 function ProductsTree() {
     return (
         <div className='w-full bg-[#FFF7F4] py-20 '>
-          <h1 className=' max-md:text-base text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold'>جدید ترین کفش های ورزشی </h1>
+          <h1 className=' max-md: text-base text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold'>جدید ترین کفش های ورزشی </h1>
           <div className='container mx-auto'>
             <div className='relative hidden md:flex gap-x-2.5 bottom-4.5  '>  
             <button 
