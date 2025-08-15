@@ -7,7 +7,7 @@ import ProductsFourDetails from '../productsFourDetails/productsFourDetails';
 function ProductsFour() {
     return (
         <div className='w-full bg-[#FFF7F4] py-20 '>
-          <h1 className='text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold'>جدید ترین کفش های ورزشی </h1>
+          <h1 className='text-base  md:text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold'>تخفیفات ویژه</h1>
           <div className='container mx-auto'>
             <div className='relative hidden md:flex gap-x-2.5 bottom-4.5  '>  
             <button 
@@ -51,17 +51,17 @@ function ProductsFour() {
             >
     
 
-              <SwiperSlide>
-      <ProductsFourDetails
-        title="کفش نایک مدل S-2000"
-        price="۲۰۰۰۰۰ تومان"
-        size="دوچرخه مدل AO-14"
-        img="/public/images/main/cickle2.jpg"
-        delay="200"
-        duration="800"
-    
-      />
-    </SwiperSlide>
+                {/* <SwiperSlide>
+        <ProductsFourDetails
+          title="کفش نایک مدل S-2000"
+          price="۲۰۰۰۰۰ تومان"
+          size="دوچرخه مدل AO-14"
+          img="/public/images/main/cickle2.jpg"
+          delay="200"
+          duration="800"
+      
+        />
+      </SwiperSlide> */}
              
               <SwiperSlide>
                 <ProductsFourDetails
@@ -74,7 +74,18 @@ function ProductsFour() {
               </SwiperSlide>
               <SwiperSlide>
                 <ProductsFourDetails
-                  title="ست نایک مدل S-2000"
+                  title="اسکوتر مدل A-155"
+                  price="۳۰۰,۰۰۰ تومان"
+                  size="از سایز L تا XXL"
+                  img="/public/images/main/sck.jpg"
+                  delay="0"
+                  duration="800"
+                  
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProductsFourDetails
+                  title="اسکوتر مدل A-155"
                   price="۳۰۰,۰۰۰ تومان"
                   size="از سایز L تا XXL"
                   img="/public/images/main/sck.jpg"
@@ -90,7 +101,7 @@ function ProductsFour() {
     
               <SwiperSlide>
                 <ProductsFourDetails
-                  title="کفش نایک مدل S-2000"
+                  title="دوچرخه مدل AO-14"
                   price="۲۰۰۰۰۰ تومان"
                   size="از سایز L تا XXL"
                   img="/public/images/main/cickle2.jpg"

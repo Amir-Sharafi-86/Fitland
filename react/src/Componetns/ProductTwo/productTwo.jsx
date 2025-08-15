@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 function ProductTwo() {
   return (
     <div className='w-full bg-[#FFF7F4] py-20 '>
-      <h1 className='text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold'>تخفیفات ویژه</h1>
+      <h1 className=' text-base  md:text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold'>تخفیفات ویژه</h1>
       <div className='container mx-auto'>
         <div className='relative hidden md:flex gap-x-2.5 bottom-4.5  '>  
         <button 
@@ -38,10 +38,10 @@ function ProductTwo() {
           modules={[Autoplay, Navigation]}
           spaceBetween={20}
           slidesPerView={2}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // }}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -50,17 +50,42 @@ function ProductTwo() {
             768: { slidesPerView: 3 },
           }}
         >
-          <SwiperSlide>
+        
+           <SwiperSlide>
             <ProductDetailsTwo
-              title="سویشرت نایک مدل AO-14"
+              title="ست نایک مدل S-2000"
               price="۳۰۰,۰۰۰ تومان"
               size="از سایز L تا XXL"
               img="/public/images/main/prodcuttwos.png"
-              isTrue = "true"
+              delay="0"
+              duration="800"
+              
+            />
+          </SwiperSlide>
+           <SwiperSlide>
+            <ProductDetailsTwo
+              title="ست نایک مدل S-2000"
+              price="۳۰۰,۰۰۰ تومان"
+              size="از سایز L تا XXL"
+              img="/public/images/main/prodcuttwos.png"
+              delay="0"
+              duration="800"
+              
+            />
+          </SwiperSlide>
+           <SwiperSlide>
+            <ProductDetailsTwo
+              title="ست نایک مدل S-2000"
+              price="۳۰۰,۰۰۰ تومان"
+              size="از سایز L تا XXL"
+              img="/public/images/main/prodcuttwos.png"
+              delay="0"
+              duration="800"
+              
             />
           </SwiperSlide>
 
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <ProductDetailsTwo
               title="ست نایک مدل S-2000"
               price="۳۰۰,۰۰۰ تومان"
@@ -82,9 +107,9 @@ function ProductTwo() {
     duration="800"
 
   />
-</SwiperSlide>
+</SwiperSlide> */}
 
-
+{/* 
           <SwiperSlide>
             <ProductDetailsTwo
               title="کفش نایک مدل S-2000"
@@ -94,7 +119,7 @@ function ProductTwo() {
              delay="400"
              duration="800"
             />
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
     </div>

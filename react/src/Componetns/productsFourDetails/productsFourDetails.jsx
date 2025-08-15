@@ -10,7 +10,7 @@ function ProductsFourDetails(props) {
         return (
             
             <div  className={props.className}>
-                        <div className="box-prodcut pt-0 pb-20  border border-[#EDEDED] bg-white   " data-aos="fade-up"  
+                        <div className="box-prodcut pt-0 pb-18  border border-[#EDEDED] bg-white   " data-aos="fade-up"  
                         data-aos-delay={props.delay}
                           data-aos-duration={props.duration}
                         >
@@ -29,9 +29,9 @@ function ProductsFourDetails(props) {
                             }
     
                             <div className='flex flex-col  mt-4 text-[15px]  font-MorabbaMedium gap-y-3 pr-4'>
-                                <span className='text-[#01070D] text-xl'>{props.title}</span>
-                                <span className='text-[#000306] text-base'>{props.price}</span>
-                                <span className='text-[#404040] text-sm'>{props.size}</span>
+                                <span className='text-[#01070D]  text-base md:text-xl'>{props.title}</span>
+                                <span className='text-[#000306]  text-sm md:text-base'>{props.price}</span>
+                                <span className='text-[#404040]  text-xs md:text-sm'>{props.size}</span>
                             </div>
                             <div>
                             </div>

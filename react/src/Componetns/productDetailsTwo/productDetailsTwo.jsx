@@ -31,9 +31,9 @@ function ProductDetailsTwo(props ,) {
                         }
 
                         <div className='flex flex-col  mt-4 text-[15px]  font-MorabbaMedium gap-y-3 pr-4'>
-                            <span className='text-[#01070D] text-xl'>{props.title}</span>
-                            <span className='text-[#000306] text-base'>{props.price}</span>
-                            <span className='text-[#404040] text-sm'>{props.size}</span>
+                            <span className='text-[#01070D]  text-base  md:text-xl'>{props.title}</span>
+                            <span className='text-[#000306]  text-sm md:text-base'>{props.price}</span>
+                            <span className='text-[#404040]  text-xs md:text-sm'>{props.size}</span>
                         </div>
                         <div>
                             {/* //?codes */}

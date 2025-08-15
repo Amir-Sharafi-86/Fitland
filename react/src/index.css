@@ -41,15 +41,15 @@
 
     @font-face {
         font-family: "Morabba Light";
-        src: url("../src/fonts/Morabba/woff2/Morabba-Light.woff2");
+        src: url("../public/fonts/Morabba/woff2/Morabba-Light.woff2");
     }
     @font-face {
         font-family: "Morabba Medium";
-        src: url("../src/fonts/Morabba/woff2/Morabba-Medium.woff2");
+        src: url("../public/fonts/Morabba/woff2/Morabba-Medium.woff2");
     }
     @font-face {
         font-family: "Morabba Bold";
-        src: url("../src/fonts/Morabba/woff2/Morabba-Bold.woff2");
+        src: url("../public/fonts/Morabba/woff2/Morabba-Bold.woff2");
     }
     
 }
