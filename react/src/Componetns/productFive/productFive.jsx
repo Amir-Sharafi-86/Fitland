@@ -1,20 +1,19 @@
 import React from 'react'
-import ProductDetailsOne from '../productDetailsOne/productDetailsOne';
+import ProductDetailsFour from '../ProductDetailsFour/ProductDetailsFour'
 
 
-function ProductOne() {
+function ProdcutFive() {
     return (
-        <div className='my-[80px] container flex  justify-center sm:justify-between items-end gap-4.5 md:gap-9'>
-            <ProductDetailsOne  title="جدید ترین تخفیفات فصل برند نایک" text = " تخفیف روی تمام محصولات "  duration="2500" deley="1200" img="/public/images/main/product.jpg" />
-            <ProductDetailsOne  title="جدید ترین تخفیفات فصل برند پوما" text = " تخفیف روی تمام محصولات "  duration="2500" deley="1200" img="/public/images/main/product2.png" />
+        <div className='my-[80px]  xl:pb-20 container flex  justify-center sm:justify-between items-end gap-4.5 md:gap-9'>
+            <ProductDetailsFour  title="جدید ترین تخفیفات فصل برند نایک" text = " تخفیف روی تمام محصولات "  duration="2500" deley="1200" img="/public/images/main/productFive.jpg" />
+            <ProductDetailsFour  title="جدید ترین تخفیفات فصل برند پوما" text = " تخفیف روی تمام محصولات "  duration="2500" deley="1200" img="/public/images/main/productFive.jpg" />
           
             
         <div className="title hidden lg:block">
             <p className='text-midnight text-sm md:text-2xl font-MorabbaBold mb-2.5'>جدید ترین محصولات</p>
             <span className='text-[#606060] text-base max-sm:text-xs max-w-[309px] font-MorabbaMedium inline-block'>جدید ترین محصولات با ارسال رایگان تهیه 
-کنید و در سریع ترین زمان درب منزل 
-تحویل
- بگیرید
+بزودی کامل ترین مجموعه از لوازم کمپ در فیت لند 
+از سفر لذت ببر
 </span>
 
                     <button className='btn-orange flex justify-center items-end'>
@@ -29,4 +28,4 @@ function ProductOne() {
     )
 }
 
-export default ProductOne
+export default ProdcutFive

@@ -6,6 +6,8 @@ import ProductTwo from '../ProductTwo/productTwo'
 import ProductsTree from '../productsTree/productsTree'
 import BannerTwo from '../bannerTwo/bannerTwo'
 import ProductsFour from '../productsFour/productsFour'
+import ProdcutFive from '../productFive/productFive'
+import BannerTree from '../bannerTree/bannerTree'
 function Main() {
     return (
         <div>
@@ -18,6 +20,8 @@ function Main() {
             <ProductsTree />
             <BannerTwo />
             <ProductsFour />
+            <ProdcutFive />
+            <BannerTree />
         </div>
     )
 }
