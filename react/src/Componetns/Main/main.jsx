@@ -11,7 +11,7 @@ import BannerTree from '../bannerTree/bannerTree'
 import Exercise from '../exercise/exercise'
 function Main() {
     return (
-        <div>
+        <>
             <main className='max-w-[1440px] mx-auto  overflow-x-hidden '>
                 <Herosection />
                 <ProductOne />
@@ -24,7 +24,7 @@ function Main() {
             <ProdcutFive />
             <BannerTree />
             <Exercise />
-        </div>
+        </>
     )
 }
 

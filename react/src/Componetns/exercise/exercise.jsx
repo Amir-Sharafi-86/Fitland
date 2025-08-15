@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 function Exercise() {
     return (
         <>
-         <h1 className='text-base  md:text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold'>تخفیفات ویژه</h1>
+         <h1 className='text-base  md:text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold  tracking-wide'  style={{wordSpacing : "6px"}}>جدیدترین ها  در  اخبار ورزش</h1>
           <div className='container mx-auto'>
             <div className='relative hidden md:flex gap-x-2.5 bottom-4.5  '>  
             <button 
@@ -51,33 +51,22 @@ function Exercise() {
             >
     
 
-                {/* <SwiperSlide>
-        <ExerciseDetails
-          title="کفش نایک مدل S-2000"
-          price="۲۰۰۰۰۰ تومان"
-          size="دوچرخه مدل AO-14"
-          img="/public/images/main/cickle2.jpg"
-          delay="200"
-          duration="800"
-      
-        />
-      </SwiperSlide> */}
              
               <SwiperSlide>
                 <ExerciseDetails
-                  title="دوچرخه مدل S-2000"
+                  title="افزایش دریافتی فوتبالیست ها و معافیت از سربازی "
                   price="۳۰۰,۰۰۰ تومان"
                   size="از سایز L تا XXL"
-                  img="/public/images/main/cickle.jpg"
+                  img="/public/images/main/exersice.png"
                   isTrue = "true"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <ExerciseDetails
-                  title="اسکوتر مدل A-155"
+                  title="شکست استرالیا در گام نخست جام جهانی فوتبال زنان!"
                   price="۳۰۰,۰۰۰ تومان"
                   size="از سایز L تا XXL"
-                  img="/public/images/main/sck.jpg"
+                  img="/public/images/main/exersiceTwo.png"
                   delay="0"
                   duration="800"
                   
@@ -88,7 +77,7 @@ function Exercise() {
                   title="اسکوتر مدل A-155"
                   price="۳۰۰,۰۰۰ تومان"
                   size="از سایز L تا XXL"
-                  img="/public/images/main/sck.jpg"
+                  img="/public/images/main/exersice.png"
                   delay="0"
                   duration="800"
                   

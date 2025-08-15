@@ -27,10 +27,10 @@
         @apply mx-auto px-4 lg:px-2.5
     }
     .btn-orange {
-        @apply py-2 px-6 w-full flex gap-x-2   justify-center  rounded-md mt-4 bg-orange-noraml items-end        ;
+        @apply py-2 px-6 w-full flex gap-x-2   justify-center  rounded-md mt-4 bg-orange-noraml items-end;
     }
     .btn-midnight {
-        @apply py-2 px-6 w-full flex gap-x-2   justify-center  rounded-md mt-4 bg-midnight items-end        ;
+        @apply py-2 px-6 w-full flex gap-x-2   justify-center  rounded-md mt-4 bg-midnight items-end;
     }
 }
 
