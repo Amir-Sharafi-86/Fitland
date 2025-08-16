@@ -3,7 +3,7 @@ import React from 'react'
 function TopFooter() {
     return (
         <>
-        <div className='bg-[#F4FAFF] flex-center max-md:flex-wrap mb-8 gap-6 py-8.5 '>
+        <div className='bg-[#F4FAFF] flex-center max-sm:flex-wrap mb-8 gap-6 py-8.5 max-lg:px-8'>
             <div className='boxContent py-6.5  bg-white px-[17px] border flex flex-col justify-center items-center border-[#CFE8FF] rounded-2xl'>
                   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ function TopFooter() {
         
         
         <div>
-            <p className='max-w-[358px] max-md:max-w-[261px]   max-md:text-xs text-2xl  text-midnight font-MorabbaBold'>با بیش از ده سال سابقه فروش
+            <p className='max-w-[358px] max-sm:max-w-[261px]   max-sm:text-xs md:text-lg lg:text-2xl  text-midnight font-MorabbaBold'>با بیش از ده سال سابقه فروش
                لوازم
                ورزشی
                و لباس های ورزشی</p>
