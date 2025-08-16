@@ -3,12 +3,17 @@ import AOS from 'aos'
 function ProductDetailsTwo(props ,) {
 
 
-    useEffect(() => {
-            AOS.init({
-                // duration: 5000,
-                once: false,     
-              });
-        } , [])
+  useEffect(() => {
+       const handleScroll = () => {
+         AOS.refresh();  
+          };
+     
+       window.addEventListener('scroll', handleScroll);
+     
+       return () => {
+         window.removeEventListener('scroll', handleScroll);
+       };
+     }, [])
     return (
         
         <div  className={props.className}>

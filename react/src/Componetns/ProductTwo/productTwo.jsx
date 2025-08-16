@@ -37,11 +37,11 @@ function ProductTwo() {
         <Swiper
           modules={[Autoplay, Navigation]}
           spaceBetween={20}
-          slidesPerView={2}
-          // autoplay={{
-          //   delay: 3000,
-          //   disableOnInteraction: false,
-          // }}
+          slidesPerView={3}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -84,8 +84,7 @@ function ProductTwo() {
               
             />
           </SwiperSlide>
-
-          {/* <SwiperSlide>
+           <SwiperSlide>
             <ProductDetailsTwo
               title="ست نایک مدل S-2000"
               price="۳۰۰,۰۰۰ تومان"
@@ -97,29 +96,7 @@ function ProductTwo() {
             />
           </SwiperSlide>
 
-          <SwiperSlide>
-  <ProductDetailsTwo
-    title="کفش نایک مدل S-2000"
-    price="۲۰۰۰۰۰ تومان"
-    size="از سایز L تا XXL"
-    img="/public/images/main/mankan.png"
-    delay="200"
-    duration="800"
-
-  />
-</SwiperSlide> */}
-
-{/* 
-          <SwiperSlide>
-            <ProductDetailsTwo
-              title="کفش نایک مدل S-2000"
-              price="۲۰۰۰۰۰ تومان"
-              size="از سایز L تا XXL"
-              img="/public/images/main/shoes.png"
-             delay="400"
-             duration="800"
-            />
-          </SwiperSlide> */}
+       
         </Swiper>
       </div>
     </div>

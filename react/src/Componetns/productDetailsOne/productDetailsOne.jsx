@@ -2,11 +2,16 @@ import React  , {useEffect}from 'react'
 import AOS from 'aos'
 function ProductDetailsOne(props) {
      useEffect(() => {
-              AOS.init({
-                  // duration: 5000,
-                  once: false,     
-                });
-          } , [])
+          const handleScroll = () => {
+            AOS.refresh();  
+             };
+        
+          window.addEventListener('scroll', handleScroll);
+        
+          return () => {
+            window.removeEventListener('scroll', handleScroll);
+          };
+        }, [])
     return (
         <div>
             <div className="relative inline-block "

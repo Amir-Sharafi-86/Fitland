@@ -9,6 +9,8 @@ import ProductsFour from '../productsFour/productsFour'
 import ProdcutFive from '../productFive/productFive'
 import BannerTree from '../bannerTree/bannerTree'
 import Exercise from '../exercise/exercise'
+import TopFooter from '../topFooter/topFooter'
+import Footer from '../Footer/footer'
 function Main() {
     return (
         <>
@@ -24,6 +26,11 @@ function Main() {
             <ProdcutFive />
             <BannerTree />
             <Exercise />
+            <TopFooter />    
+
+            <footer className='bg-midnight md:pt-15'>
+                <Footer></Footer>
+            </footer>
         </>
     )
 }

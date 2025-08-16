@@ -1,12 +1,17 @@
 import React , {useEffect} from 'react'
 import AOS from 'aos';
 function ProdcutsDetailsTree(props) {
-    useEffect(() => {
-                AOS.init({
-                    // duration: 5000,
-                    once: false,     
-                  });
-            } , [])
+   useEffect(() => {
+        const handleScroll = () => {
+          AOS.refresh();  
+           };
+      
+        window.addEventListener('scroll', handleScroll);
+      
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, [])
     return (
         
         <div  className={props.className}>
