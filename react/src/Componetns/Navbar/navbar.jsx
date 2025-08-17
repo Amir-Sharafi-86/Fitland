@@ -1,6 +1,7 @@
 import React from 'react'
 import NavMenu from '../Nav-menu/navMenu'
 import { useState } from 'react'
+import Overlay from '../overlay/overlay'
 
 function Navbar() {
   const [isShow , setIsShow ] = useState(false)
@@ -13,6 +14,7 @@ function Navbar() {
 
   return (
     <>
+
       <div className="container px-6 pt-4 mx-auto lg:pt-9 header max-w-[1440px] hidden md:block">
         <div className="wrapper-navbar flex justify-between items-center gap-4 relative" >
 
@@ -137,13 +139,17 @@ function Navbar() {
 
       {/* //? header menuMobile  Main */}
 
-      <div className={`  ${isShow === true ? `flex`  : `hidden`} items-center gap-2 font-MorabbaBold transition-all   bg-gray-100 py-5 text-caption flex-col`}>
+      <div className={`  ${isShow === true ? `flex`  : `hidden`}  items-center gap-2 font-MorabbaBold transition-all   
+      
+      bg-whtie py-5 text-caption flex-col`}>
+                
                 <a href="#" className="w-full text-center py-2 hover:bg-gray-100 rounded">خانه</a>
                 <button className="w-full text-center py-2 hover:bg-gray-100 rounded">خدمات</button>
                 <button className="w-full text-center py-2 hover:bg-gray-100 rounded">مشاورین</button>
                 <button className="w-full text-center py-2 hover:bg-gray-100 rounded">سوالات متداول</button>
+                
     </div>
-
+    <Overlay isVisible={isShow} onClick={showMenuMobile} />
     </>
   )
 }

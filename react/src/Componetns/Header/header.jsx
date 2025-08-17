@@ -3,12 +3,12 @@ import Topbar from '../Topbar/topbar'
 import Navbar from '../Navbar/navbar'
 function Header() {
     return (
-        <div>
-    
+        <header className='relative z-999 bg-white'>
             <Topbar />
+            
             <Navbar  />
+        </header>            
 
-        </div>
     )
 }
 
