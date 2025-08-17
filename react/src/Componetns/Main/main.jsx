@@ -28,7 +28,7 @@ function Main() {
             <Exercise />
             <TopFooter />    
 
-            <footer className='bg-midnight md:pt-15'>
+            <footer className='bg-midnight pt-9  lg:pt-15'>
                 <Footer></Footer>
             </footer>
         </>
