@@ -4,15 +4,23 @@ import { useState } from 'react'
 function FooterContent() {
 
     const [isToggle  , setIsToggle ] = useState(false)
+    const [isToggleTwo  , setIsToggleTwo ] = useState(false)
+    const [isToggleTree  , setIsToggleTree ] = useState(false)
 
     const showBodyAccordion = async () => {
           setIsToggle(!isToggle)
+    }
+    const showBodyAccordion2 = async () => {
+          setIsToggleTwo(!isToggleTwo)
+    }
+    const showBodyAccordion3 = async () => {
+          setIsToggleTree(!isToggleTree)
     }
 
     return (
         <>
          <div className="container">
-         <div className="top-wrapper flex justify-center lg:justify-between items-start pb-20">
+         <div className="top-wrapper flex justify-center lg:justify-between items-start pb-20 max-sm:pb-10">
             <div className="parent-item flex  max-lg:hidden gap-x-20">
             <ul className='text-gray-main  flex flex-col space-y-3.5'>
                 <h1 className='mb-5 text-white'>محبوب‌ترین‌ها</h1>
@@ -172,7 +180,7 @@ function FooterContent() {
 
             <div className="about">
                 <h1 className='mb-4 text-sm text-white font-MorabbaBold'>فروشگاه اینترنتی فیت‌لند</h1>
-                <p className='max-w-[650px] text-[#F9F9F9] text-xs font-MorabbaBold leading-[1.7]'>فروشگاه لوازم ورزشی فیت‌لند در سال 1403 کار خود را به صورت حرفه ای آغاز کرد و با هدف ارائه جدیدترین محصولات ورزشی از قبیل لوازم فوتبال، فوتسال، والیبال، بسکتبال، تنیس و... همچنین پوشاک ورزشی و تجهیزات سفر، از برند های معتبر دنیا در محیطی کاربرپسند، قابل اطمینان و با مجربترین مشاوران و کارشناسان ورزشی فعالیت می کند. فروشگاه فیت‌لند دارای نماد اعتماد از وزارت صنعت معدن و تجارت می باشد و تمامی محصولات خود را با 7 روز ضمانت بازگشت همراه با گارانتی اصالت و سلامت فیزیکی، با سریع ترین روش های ارسال به سراسر ایران در اختیار مشتریان خود قرار می دهد.</p>
+                <p className='max-w-[650px] text-[#F9F9F9] text-xs font-MorabbaBold leading-[1.7] max-lg:mb-8'>فروشگاه لوازم ورزشی فیت‌لند در سال 1403 کار خود را به صورت حرفه ای آغاز کرد و با هدف ارائه جدیدترین محصولات ورزشی از قبیل لوازم فوتبال، فوتسال، والیبال، بسکتبال، تنیس و... همچنین پوشاک ورزشی و تجهیزات سفر، از برند های معتبر دنیا در محیطی کاربرپسند، قابل اطمینان و با مجربترین مشاوران و کارشناسان ورزشی فعالیت می کند. فروشگاه فیت‌لند دارای نماد اعتماد از وزارت صنعت معدن و تجارت می باشد و تمامی محصولات خود را با 7 روز ضمانت بازگشت همراه با گارانتی اصالت و سلامت فیزیکی، با سریع ترین روش های ارسال به سراسر ایران در اختیار مشتریان خود قرار می دهد.</p>
             </div>
 
             <div className="icon  flex flex-col items-center">
@@ -186,8 +194,54 @@ function FooterContent() {
             </div>
 
          </div>
-        
-         <div className="bottom-wrapper__mobile--acordion hidden max-sm:block space-y-6 ">
+        <div className="wrapper-acc mb-10">
+         <div className="bottom-wrapper__mobile--acordion hidden max-sm:block  ">
+            <div className="header flex justify-between items-end w-[80%]">
+                <span className='text-[#EDEDED] text-sm font-MorabbaMedium mr-[4rem] sm:mr-[5rem]'>راهنمای خرید</span>
+                <button className='border cursor-pointer border-[#EDEDED] rounded-full p-0.5' onClick={showBodyAccordion}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3.5 text-white">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                  </svg>
+  
+                </button>
+
+            </div>
+            <div className="body-accordion transition-[10s] w-[80%] ">
+                    <p className={`text-white mb-4 max-xs:mr-[50px] sm:mr-[57px] mr-[4rem] mt-4   ${isToggle === true ? `block` : `hidden`}`}>برای خرید با کیفیت و بهتر با پشتیبان ما در ارتباط باشید </p>
+            </div>
+         </div>
+         <div className="bottom-wrapper__mobile--acordion hidden max-sm:block my-6 ">
+            <div className="header flex justify-between items-end w-[80%]">
+                <span className='text-[#EDEDED] text-sm font-MorabbaMedium mr-[4rem] sm:mr-[5rem]'>محبوب‌ترین‌ها</span>
+                <button className='border cursor-pointer border-[#EDEDED] rounded-full p-0.5' onClick={showBodyAccordion2}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3.5 text-white">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                  </svg>
+  
+                </button>
+
+            </div>
+            <div className="body-accordion transition-[10s] w-[80% ] ">
+                    <p className={`text-white mb-4 max-xs:mr-[50px] sm:mr-[57px] mr-[4rem]  mt-4  ${isToggleTwo === true ? `block` : `hidden`}`}>برای خرید با کیفیت و بهتر با پشتیبان ما در ارتباط باشید </p>
+            </div>
+         </div>
+         <div className="bottom-wrapper__mobile--acordion hidden max-sm:block  ">
+            <div className="header flex justify-between items-end w-[80%]">
+                <span className='text-[#EDEDED] text-sm font-MorabbaMedium mr-[4rem] sm:mr-[5rem]'>اطلاعات تماس</span>
+                <button className='border cursor-pointer border-[#EDEDED] rounded-full p-0.5' onClick={showBodyAccordion3}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3.5 text-white">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                  </svg>
+  
+                </button>
+
+            </div>
+            <div className="body-accordion transition-[10s] w-[80%] ">
+                    <p className={`text-white mb-4 max-xs:mr-[50px] sm:mr-[57px] mr-[4rem] mt-4   ${isToggleTree === true ? `block` : `hidden`}`}>برای خرید با کیفیت و بهتر با پشتیبان ما در ارتباط باشید </p>
+            </div>
+         </div>
+        </div>
+         {/* <div className="bottom-wrapper__mobile--acordion hidden max-sm:block space-y-6 ">
             <div className="header flex justify-between items-end w-[80%]">
                 <span className='text-[#EDEDED] text-sm font-MorabbaMedium mr-[4rem] sm:mr-[5rem]'>راهنمای خرید</span>
                 <button className='border cursor-pointer border-[#EDEDED] rounded-full p-0.5' onClick={showBodyAccordion}>
@@ -201,7 +255,10 @@ function FooterContent() {
             <div className="body-accordion transition-[10s] w-[80%] ">
                     <p className={`text-white mb-4 max-xs:mr-[50px] sm:mr-[57px] mr-[4rem]  ${isToggle === true ? `block` : `hidden`}`}>برای خرید با کیفیت و بهتر با پشتیبان ما در ارتباط باشید </p>
             </div>
-         </div>
+         </div> */}
+
+
+
 
         </div>
          <div className='border border-[#CBCBCB]'>

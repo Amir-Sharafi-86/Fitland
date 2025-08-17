@@ -6,9 +6,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 function Exercise() {
     return (
-        <>
+      <div className='pt-20'>
          <h1 className='text-base  md:text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold  tracking-wide'  style={{wordSpacing : "6px"}}>جدیدترین ها  در  اخبار ورزش</h1>
-          <div className='container '>
+          <div className='container  '>
             <div className='relative hidden md:flex gap-x-2.5 bottom-4.5  '>  
             <button 
       className='cursor-pointer  rounded-full mb-8 p-2 swiper-button-next absolute top-1/2 right-0 w-10 h-10 -translate-y-1/2 z-20'
@@ -46,7 +46,7 @@ function Exercise() {
                 prevEl: ".swiper-button-next",
               }}
               breakpoints={{
-                768: { slidesPerView: 2 },
+               640 : { slidesPerView: 2 },
               }}
             >
     
@@ -77,7 +77,7 @@ function Exercise() {
               </SwiperSlide>
               <SwiperSlide>
                 <ExerciseDetails
-                  title="اسکوتر مدل A-155"
+                  title="شکست استرالیا در گام نخست جام جهانی فوتبال زنان!"
                   price="۳۰۰,۰۰۰ تومان"
                   size="از سایز L تا XXL"
                   img="/public/images/main/exersice.png"
@@ -91,7 +91,7 @@ function Exercise() {
     
             </Swiper>
           </div>
-        </>
+      </div>
     )
 }
 

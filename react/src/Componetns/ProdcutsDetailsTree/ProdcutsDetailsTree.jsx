@@ -48,8 +48,6 @@ function ProdcutsDetailsTree(props) {
                             <div className="componetns bg-[#000306] size-4.5  rounded-full"></div>
                         </div>
                     </div>
-
-                    
         </div>
     )
 }
