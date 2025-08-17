@@ -4,11 +4,9 @@ import { useState } from 'react'
 function FooterContent() {
 
     const [isToggle  , setIsToggle ] = useState(false)
-  
 
     const showBodyAccordion = async () => {
           setIsToggle(!isToggle)
-          
     }
 
     return (
@@ -200,8 +198,8 @@ function FooterContent() {
                 </button>
 
             </div>
-            <div className="body-accordion transition-[5s]">
-                    <p className={`text-white mb-4  ${isToggle === true ? `block` : `hidden`}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sapiente voluptates libero ad a voluptas rem minima consequatur! Deserunt nobis temporibus molestias? Ex ipsa harum mollitia unde deleniti autem, aliquid culpa iusto. Officiis repudiandae odit autem ad unde nostrum temporibus.</p>
+            <div className="body-accordion transition-[10s] w-[80%] ">
+                    <p className={`text-white mb-4 max-xs:mr-[50px] sm:mr-[57px] mr-[4rem]  ${isToggle === true ? `block` : `hidden`}`}>برای خرید با کیفیت و بهتر با پشتیبان ما در ارتباط باشید </p>
             </div>
          </div>
 
