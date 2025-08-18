@@ -9,8 +9,8 @@
     --color-blue-noraml: #FA541C; 
     --color-black-noraml: #FA541C; 
     --color-black-main: #01070D; 
+    --color-black-mainTwo: #000306; 
     --color-gray-main: #CBCBCB; 
-
 
     --breakpoint-xs : 480px;
 }
@@ -26,12 +26,20 @@
     }
     .container {
         @apply mx-auto px-4 lg:px-2.5
+    }   
+    .container: {
+
     }
     .btn-orange {
         @apply py-2 px-6 w-full flex gap-x-2   justify-center  rounded-md mt-4 bg-orange-noraml items-end;
     }
     .btn-midnight {
         @apply py-2 px-6 w-full flex gap-x-2   justify-center  rounded-md mt-4 bg-midnight items-end;
+    }
+    .flex-justify {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
