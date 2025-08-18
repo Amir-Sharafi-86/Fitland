@@ -21,7 +21,7 @@ function ProductsFourDetails(props) {
                         >
     
                             <div className='relative'>
-                                <img src={props.img} className='rounded-md' />
+                                <img src={props.img} className='rounded-md  max-sm:h-[280px]' />
                             </div>
                             {
                                 props.isTrue === "true" ? (

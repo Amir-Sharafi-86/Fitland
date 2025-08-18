@@ -6,8 +6,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 function ProductsTree() {
     return (
-        <div className='w-full bg-[#FFF7F4] py-20 '>
-          <h1 className=' max-md: text-base text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold'>جدید ترین کفش های ورزشی </h1>
+        <div className='w-full bg-white mt-20 pb-9 '>
+          <h1 className=' max-md:text-base text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold pt-8'>جدید ترین کفش های ورزشی </h1>
           <div className='container mx-auto'>
             <div className='relative hidden md:flex gap-x-2.5 bottom-4.5  '>  
             <button 
@@ -51,10 +51,10 @@ function ProductsTree() {
             >
                  <SwiperSlide>
                 <ProdcutsDetailsTree
-                  title="ست نایک مدل S-2000"
+                  title="سویشرت نایک مدل AO-14"
                   price="۳۰۰,۰۰۰ تومان"
                   size="از سایز L تا XXL"
-                  img="/public/images/main/shoesTwo.png"
+                  img="./public/images/main/shoesMain.png"
                   delay="0"
                   duration="800"
                   
@@ -65,7 +65,7 @@ function ProductsTree() {
                   title="سویشرت نایک مدل AO-14"
                   price="۳۰۰,۰۰۰ تومان"
                   size="از سایز L تا XXL"
-                  img="/public/images/main/prodcuttwos.png"
+                  img="./public/images/main/mainDress.png"
                   isTrue = "true"
                 />
               </SwiperSlide>
@@ -77,7 +77,7 @@ function ProductsTree() {
         title="کفش نایک مدل S-2000"
         price="۲۰۰۰۰۰ تومان"
         size="از سایز L تا XXL"
-        img="/public/images/main/shoesTwo.png"
+        img="./public/images/main/shoesMain.png"
         delay="200"
         duration="800"
     
@@ -90,7 +90,7 @@ function ProductsTree() {
                   title="کفش نایک مدل S-2000"
                   price="۲۰۰۰۰۰ تومان"
                   size="از سایز L تا XXL"
-                  img="/public/images/main/shoesOne.png"
+                  img="./public/images/main/mainDress.png"
                  delay="400"
                  duration="800"
                 />

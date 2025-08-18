@@ -176,7 +176,7 @@ function FooterContent() {
          </div>
 
          <div className="bottom-wrapper block max-sm:hidden ">
-            <div className='flex justify-between items-start max-lg:justify-center max-lg:flex-wrap max-lg:mb-24 mb-48'>
+            <div className='flex justify-between items-start max-lg:justify-center max-lg:flex-wrap max-lg:mb-24 mb-12'>
 
             <div className="about">
                 <h1 className='mb-4 text-sm text-white font-MorabbaBold'>فروشگاه اینترنتی فیت‌لند</h1>
@@ -256,17 +256,11 @@ function FooterContent() {
                     <p className={`text-white mb-4 max-xs:mr-[50px] sm:mr-[57px] mr-[4rem]  ${isToggle === true ? `block` : `hidden`}`}>برای خرید با کیفیت و بهتر با پشتیبان ما در ارتباط باشید </p>
             </div>
          </div> */}
-
-
-
-
         </div>
          <div className='border border-[#CBCBCB]'>
-         
-
          </div>
          <div className="container">
-                 <div className="developer py-4 flex justify-between items-center">
+                 <div className="developer py-4 max-sm:flex-col max-sm:gap-y-6 flex justify-between items-center">
                     <div className='flex gap-x-2 items-end' >
                           <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -311,7 +305,7 @@ function FooterContent() {
       d="M11.086 13.27h-3.5c-1.412 0-2.188-.776-2.188-2.187V2.916c0-1.412.776-2.187 2.188-2.187h3.5c1.412 0 2.187.775 2.187 2.187v8.167c0 1.411-.775 2.187-2.187 2.187m-3.5-11.666c-.922 0-1.313.39-1.313 1.312v8.167c0 .921.391 1.312 1.313 1.312h3.5c.922 0 1.312-.39 1.312-1.312V2.916c0-.922-.39-1.312-1.312-1.312z"
     ></path>
   </svg>
-                          <p className='text-[#ADADAD] text-[10px] font-MorabbaBold'>طراحی شده توسط گروه 8 دوره طراحی رابط کاربری احسان عزتی</p>
+                          <p className='text-[#ADADAD] text-xs font-MorabbaBold'>طراحی شده  توسط <span className='text-orange-noraml'>امیر محمد شرفی نیک</span></p>
                     </div>
                  </div>
             </div>

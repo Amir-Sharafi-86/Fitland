@@ -20,19 +20,22 @@ function Herosection() {
                     <span className='inline-block text-[#606060] text-base max-sm:text-xs'>راحت و مطمئن خرید کنید!</span>
                     
                     <span className='inline-block text-midnight max-xs:text-[15px] text-lg my-4 md:text-3xl max-sm:whitespace-nowrap'>
-  <Typewriter
-    options={{
-      strings: [
-        'همراه تو در مسیر سلامتی' , 
-        'تضمین بهترین قیمت و کیفیت'
-      ] ,
-      autoStart: true,
-      loop: true,
-      delay: 80,
-      deleteSpeed: 60,
-      cursor: '|',
-    }}
-  />
+                        <div className='hidden lg:block'>
+
+                                    <Typewriter
+                                        options={{
+                                        strings: [
+                                            'همراه تو در مسیر سلامتی' , 
+                                            'تضمین بهترین قیمت '
+                                        ] ,
+                                        autoStart: true,
+                                        loop: true,
+                                        delay: 80,
+                                        deleteSpeed: 60,
+                                        cursor: '|',
+                                        }}
+                                    />
+                        </div>
 </span>
 
 

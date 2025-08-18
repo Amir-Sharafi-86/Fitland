@@ -6,8 +6,8 @@ import 'swiper/css/navigation';
 import ProductsFourDetails from '../productsFourDetails/productsFourDetails';
 function ProductsFour() {
     return (
-        <div className='w-full bg-[#FFF7F4] py-20 '>
-          <h1 className='text-base  md:text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold'>تخفیفات ویژه</h1>
+        <div className='w-full bg-[#FFF7F4]  mt-20 pb-9  '>
+          <h1 className='text-base  md:text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold  pt-8'>تخفیفات ویژه</h1>
           <div className='container mx-auto'>
             <div className='relative hidden md:flex gap-x-2.5 bottom-4.5  '>  
             <button 

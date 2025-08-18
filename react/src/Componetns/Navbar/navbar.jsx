@@ -139,7 +139,7 @@ function Navbar() {
 
       {/* //? header menuMobile  Main */}
 
-      <div className={`  ${isShow === true ? `flex`  : `hidden`}  items-center gap-2 font-MorabbaBold transition-all   
+      <div className={`${isShow === true ? `flex`  : `hidden`} md:hidden items-center gap-2 font-MorabbaBold transition-all   
       
       bg-whtie py-5 text-caption flex-col`}>
                 
