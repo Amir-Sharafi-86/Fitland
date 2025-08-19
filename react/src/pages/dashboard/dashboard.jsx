@@ -8,8 +8,8 @@ function Dashboard() {
 
             <main className='max-w-[1440px] mx-auto'>
                 <div className="container">
-                    <div className="grid grid-cols-12 mt-10">
-                        <div className='sidebar bg-white px-8 py-12  mx-auto col-span-3'>
+                    <div className="lg:grid max-lg:flex max-lg:gap-y-12 max-lg:mb-9  max-lg:flex-wrap max-lg:justify-center max-lg:items-center lg:grid-cols-12 mt-10">
+                        <div className='sidebar w-[288px]  bg-white px-8 py-12  md:box__shadow lg:col-span-4'>
                                 <div className="user-profile   flex flex-col justify-center items-center   rounded-tr-2xl rounded-tl-2xl gap-y-2">
                                     <img src="./public/images/main/userProfile.png" className='size-25' alt="" />
                                     <span className='text-xs font-MorabbaMedium'>مهسا شیرین زبان</span>
@@ -76,7 +76,23 @@ function Dashboard() {
                         </div>
 
                         {/* //!Content User  */}
-                        <div className='col-span-9'></div>
+                        <div className='lg:col-span-8 max-md:hidden'>
+                            <div className="header--user__name">
+                                <span className='text-[#01070D] text-2xl font-MorabbaBold mb-7 block'>حساب کاربری</span>
+                            </div>
+
+                            <div className='box-infos border border-[#CBCBCB] p-6 rounded-2xl'>
+                                    <div className="grid grid-cols-2 gap-6">
+                                    <input type="text" placeholder='نام و نام خوانوادگی' className='w-full p-3 border border-[#194165] rounded-lg' />
+                                    <input type="text" placeholder='نام و نام خوانوادگی' className='w-full p-3 border border-[#194165] rounded-lg' />
+                                    <input type="text" placeholder='نام و نام خوانوادگی' className='w-full p-3 border border-[#194165] rounded-lg' />
+                                    <input type="text" placeholder='نام و نام خوانوادگی' className='w-full p-3 border border-[#194165] rounded-lg' />
+                                    <input type="text" placeholder='نام و نام خوانوادگی' className='w-full p-3 border border-[#194165] rounded-lg' />
+                                    <button className='btn-orange text-white'>ثبت</button>
+                                    </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </main>
