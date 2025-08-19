@@ -8,12 +8,14 @@ function Dashboard() {
 
             <main className='max-w-[1440px] mx-auto'>
                 <div className="container">
-                    <div className="lg:grid max-lg:flex max-lg:gap-y-12 max-lg:mb-9  max-lg:flex-wrap max-lg:justify-center max-lg:items-center lg:grid-cols-12 mt-10">
-                        <div className='sidebar w-[288px]  bg-white px-8 py-12  md:box__shadow lg:col-span-4'>
-                                <div className="user-profile   flex flex-col justify-center items-center   rounded-tr-2xl rounded-tl-2xl gap-y-2">
-                                    <img src="./public/images/main/userProfile.png" className='size-25' alt="" />
-                                    <span className='text-xs font-MorabbaMedium'>مهسا شیرین زبان</span>
-                                    <span className='font-MorabbaMedium'>mahsashirinzaban751@gmail.com</span>
+                    <div className="lg:grid max-lg:flex max-lg:gap-y-12 max-lg:mb-9  max-lg:flex-wrap max-lg:justify-center max-lg:items-center lg:grid-cols-12 sm:mt-10">
+                        <div className='sidebar  sm:w-[288px]  bg-white px-8 py-12  sm:box__shadow lg:col-span-4'>
+                                <div className="user-profile max-sm:flex-row max-sm:gap-x-2 flex flex-col justify-center items-center   rounded-tr-2xl rounded-tl-2xl gap-y-2">
+                                    <img src="./public/images/main/userProfile.png" className='size-11 sm:size-25' alt="" />
+                                    <div className='flex flex-col sm:block'>
+                                             <span className='text-xs font-MorabbaMedium'>مهسا شیرین زبان</span>
+                                             <span className='font-MorabbaMedium'>mahsashirinzaban751@gmail.com</span>
+                                    </div>
                                 </div>
 
                                 <div className='mt-12'>
@@ -76,7 +78,7 @@ function Dashboard() {
                         </div>
 
                         {/* //!Content User  */}
-                        <div className='lg:col-span-8 max-md:hidden'>
+                        <div className='lg:col-span-8 max-sm:hidden'>
                             <div className="header--user__name">
                                 <span className='text-[#01070D] text-2xl font-MorabbaBold mb-7 block'>حساب کاربری</span>
                             </div>
