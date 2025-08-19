@@ -149,6 +149,7 @@ function Navbar() {
                 <button className="w-full text-center py-2 hover:bg-gray-100 rounded">سوالات متداول</button>
                 
     </div>
+    
     <Overlay isVisible={isShow} onClick={showMenuMobile} />
     </>
   )

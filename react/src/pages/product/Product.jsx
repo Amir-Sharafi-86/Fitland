@@ -114,7 +114,7 @@ function Product() {
                           </div>
       
                           {isShowFilter === true && (
-                            <Filtering></Filtering>
+                            <Filtering  setIsShowFilter={setIsShowFilter} ></Filtering>
                           )}
 
                           <div className='wrapper__box__mobile  mt-6  block sm:hidden mx-auto space-y-5 mb-[121px]'>
