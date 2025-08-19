@@ -27,19 +27,43 @@
     .container {
         @apply mx-auto px-4 lg:px-2.5
     }   
-    .container: {
-
-    }
     .btn-orange {
         @apply py-2 px-6 w-full flex gap-x-2   justify-center  rounded-md mt-4 bg-orange-noraml items-end;
     }
     .btn-midnight {
         @apply py-2 px-6 w-full flex gap-x-2   justify-center  rounded-md mt-4 bg-midnight items-end;
     }
+
+    .checkbox:checked + .markerr {
+        background-color: #003566;
+        border: none;
+        transition: all 50ms ease-in-out;
+    }
+    .toggle-btn__input:checked  + .toggle-btn__marker {
+        background-color: #003566;
+        border: none;
+    }
+    .toggle-btn__input:checked  + .toggle-btn__marker::after {
+        right: 26px;
+    }
+
     .flex-justify {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    
+    .toggle-btn__marker::after {
+        position: absolute;
+        top: 4px;
+        margin:  0 auto;
+        content: "";
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        background-color: white;
+        border-radius: 100%;
+        right:4px;
     }
 }
 
