@@ -256,10 +256,7 @@ function FooterContent() {
                     <p className={`text-white mb-4 max-xs:mr-[50px] sm:mr-[57px] mr-[4rem]  ${isToggle === true ? `block` : `hidden`}`}>برای خرید با کیفیت و بهتر با پشتیبان ما در ارتباط باشید </p>
             </div>
          </div> */}
-        </div>
-         <div className='border border-[#CBCBCB]'>
-         </div>
-         <div className="container">
+         <div>
                  <div className="developer py-4 max-sm:flex-col max-sm:gap-y-6 flex justify-between items-center">
                     <div className='flex gap-x-2 items-end' >
                           <svg
@@ -309,6 +306,7 @@ function FooterContent() {
                     </div>
                  </div>
             </div>
+        </div>
         </>
     )
 }

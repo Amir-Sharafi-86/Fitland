@@ -27,10 +27,7 @@ function Main() {
             <BannerTree />
             <Exercise />
             <TopFooter />    
-
-            <footer className='bg-midnight pt-9  lg:pt-15'>
-                <Footer></Footer>
-            </footer>
+            <Footer></Footer>
         </>
     )
 }
