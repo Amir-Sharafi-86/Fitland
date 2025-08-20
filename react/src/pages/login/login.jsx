@@ -5,7 +5,7 @@ function Login() {
             <>
                 <main className='max-w-[1440px] mx-auto '>
                     <div className="container h-screen flex justify-center items-center">
-                        <div className="form bg-white w-[456px]  border border-[#EDEDED] p-8.5">
+                        <div className="form bg-white w-full sm:w-[456px]  border border-[#EDEDED] p-8.5">
                             <h1 className='text-[#000000] text-[28px] mb-8 font-MorabbaMedium'>ورود | ثبت‌نام</h1>
 
                             <form action="">

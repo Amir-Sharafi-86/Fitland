@@ -14,9 +14,6 @@ function DetailsProductBox() {
             </div>
             </div>
 
-           {/* <div className='box max-sm:block text-black-main bg-[#F9F9F9]'>
-
-           </div> */}
         </>
     )
 }

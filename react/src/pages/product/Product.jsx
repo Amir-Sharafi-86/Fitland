@@ -7,7 +7,7 @@ import Filtering from '../../Componetns/filtering/filtering'
 import { useState } from 'react'
 function Product() {
   const [isShowFilter ,  setIsShowFilter ] = useState(false)
-
+  const [isActive , setIsActive ] = useState("")
   const showFilteringBox = () => {
         setIsShowFilter(!isShowFilter)
   }
@@ -30,13 +30,20 @@ function Product() {
                           </div>
                        <div>
                           <div className='flex-justify'>
-                            <span>محصولات موجود </span>
-                            <p>a</p>
+                            <span className='text-[#000306] text-sm font-MorabbaMedium'>محصولات موجود </span>
+                                 <label className='toggle-btn'>
+                                      <input type="checkbox" className='toggle-btn__input hidden' name="" id="" />
+                                      <span className='toggle-btn__marker block bg-[#EEEEEE] w-11 h-6 rounded-full relative'></span>
+                                 </label>
                           </div>
-                          <div className='flex-justify mt-2'>
-                            <span>محصولات موجود </span>
-                            <p>a</p>
+                          <div className='flex-justify'>
+                            <span className='text-[#000306] text-sm font-MorabbaMedium'>محصولات تخفیف دار </span>
+                                 <label className='toggle-btn'>
+                                      <input type="checkbox" className='toggle-btn__input hidden' name="" id="" />
+                                      <span className='toggle-btn__marker block bg-[#EEEEEE] w-11 h-6 rounded-full relative'></span>
+                                 </label>
                           </div>
+                          
                        </div>
 
 
@@ -81,19 +88,28 @@ function Product() {
                           <div className="header__menu max-sm:hidden">
                             <ul className='flex gap-x-4 font-MorabbaMedium items-center'>
                               <li>
-                                  <a href="" className='text-orange-noraml text-base border-b-2 border-orange-noraml ' >پربازدیدترین </a>
+                              <a href="#" className={`text-[#404040] transition-all text-base ${isActive === "see" ? `border-b-2 border-orange-noraml text-orange-noraml` : ''} `}
+                                   onClick={() =>  setIsActive("see")}
+                                  >پربازدید ترین </a>
                               </li>
                               <li>
-                                  <a href="" className='text-[#404040] text-base border-b-2  ' >جدیدترین</a>
+                                  <a href="#" className={`text-[#404040] text-base ${isActive === "newProdcut" ? `border-b-2 border-orange-noraml text-orange-noraml` : ''} `}
+                                  onClick={() =>  setIsActive("newProdcut")}
+                                  >جدیدترین</a>
                               </li>
                               <li>
-                                  <a href="" className='text-[#404040] text-base border-b-2  ' >پرفروش ترین</a>
+                                  <a href="#" className={`text-[#404040] transition-all text-base ${isActive === "presell" ? `border-b-2 border-orange-noraml text-orange-noraml` : ''} `}
+                                   onClick={() =>  setIsActive("presell")}
+                                  >پرفروش ترین</a>
                               </li>
                               <li>
-                                  <a href="" className='text-[#242424] text-base border-b-2  ' >گران ترین</a>
+                                  <a href="#" className={`text-[#404040] transition-all text-base ${isActive === "expensive" ? `border-b-2 border-orange-noraml text-orange-noraml` : ''} `} 
+                                   onClick={() =>  setIsActive("expensive")}
+                                  
+                                  >گران ترین</a>
                               </li>
                               <li>
-                                  <a href="" className='text-[#242424] text-base border-b-2  ' >ارزان ترین</a>
+                                  <a href="#" className='text-[#242424] text-base   ' >ارزان ترین</a>
                               </li>
                             </ul>
                           </div>
