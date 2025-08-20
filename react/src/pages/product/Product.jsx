@@ -87,10 +87,13 @@ function Product() {
                         <div className='lg:col-span-10  lg:mr-32'>
                           <div className="header__menu max-sm:hidden">
                             <ul className='flex gap-x-4 font-MorabbaMedium items-center'>
+                         
                               <li>
-                              <a href="#" className={`text-[#404040] transition-all text-base ${isActive === "see" ? `border-b-2 border-orange-noraml text-orange-noraml` : ''} `}
-                                   onClick={() =>  setIsActive("see")}
-                                  >پربازدید ترین </a>
+  <a href="#"
+     className={`transition-all text-base border-b-2  ${isActive === "" ? 'border-orange-noraml text-orange-noraml' : isActive === "popular" ? `border-orange-noraml text-orange-noraml` : "text-[#404040] border-transparent" }`}
+     onClick={() => setIsActive("popular")}>
+    پربازدید ترین
+  </a>
                               </li>
                               <li>
                                   <a href="#" className={`text-[#404040] text-base ${isActive === "newProdcut" ? `border-b-2 border-orange-noraml text-orange-noraml` : ''} `}
@@ -108,9 +111,7 @@ function Product() {
                                   
                                   >گران ترین</a>
                               </li>
-                              <li>
-                                  <a href="#" className='text-[#242424] text-base   ' >ارزان ترین</a>
-                              </li>
+                             
                             </ul>
                           </div>
 
