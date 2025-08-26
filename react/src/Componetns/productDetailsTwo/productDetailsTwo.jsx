@@ -17,6 +17,7 @@ function ProductDetailsTwo(props ,) {
     return (
         
         <div  className={props.className}>
+                    
                     <div className="box-prodcut pt-0 pb-20  border border-[#EDEDED] bg-white   " data-aos="fade-up"  
                     data-aos-delay={props.delay}
                       data-aos-duration={props.duration}
