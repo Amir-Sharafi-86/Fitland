@@ -14,7 +14,7 @@ function Herosection() {
     return (
         <>
             <div className='container'>
-            <div className="grid grid-cols-12  max-xs:items-start justify-between   mt-0 max-md:mt-12 max-md:items-center md:mt-12" data-aos="fade-left">
+            <div className="grid grid-cols-12   max-xs:items-start justify-between   mt-0 max-md:mt-12 max-md:items-center md:mt-12" data-aos="fade-left">
                 <div className="   right-content font-MorabbaBold col-span-6  md:col-span-5 mx-auto  md:mr-8 "  >
                 <div className='flex  flex-col'>
                     <span className='inline-block text-[#606060] text-base max-sm:text-xs'>راحت و مطمئن خرید کنید!</span>

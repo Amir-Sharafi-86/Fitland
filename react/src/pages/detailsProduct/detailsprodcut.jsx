@@ -1,6 +1,16 @@
 import React from 'react'
 import Header from "../../Componetns/Header/header"
 import { useState } from 'react'
+
+import BoxComment from '../../Componetns/boxCommnet/boxComment'
+import ProdcutsDetailsTree from '../../Componetns/ProdcutsDetailsTree/ProdcutsDetailsTree'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import  TopFooter from "../../Componetns/topFooter/topFooter"
+import RelatedProduct from '../../Componetns/relatedProduct/relatedProduct'
+import 'swiper/css/navigation';
+import Footer from '../../Componetns/Footer/footer'
 function Detailsprodcut() {
     const [isActive , setIsActive ] = useState(false)
     
@@ -8,12 +18,13 @@ function Detailsprodcut() {
     return (
         <>
             <Header></Header>
+            
             <main className='max-w-[1440px] mx-auto'>
                 <div className="container">
                     <div className="flex max-lg:flex-wrap max-lg:justify-center max-lg:items-center  mt-12">
                         {/* //? img right  */} 
                         <div className='lg:w-1/2'>
-                              <img src="./public/images/main/detailsImg.jpg" className='rounded-md' alt="" />
+                              <img src="/images/main/detailsImg.jpg" className='rounded-md' alt="" />
                         </div>
 
                         <div className='lg:w-1/2 left-content'>
@@ -133,24 +144,24 @@ function Detailsprodcut() {
                                 </li>
                             </ul>
 
-                            <div className="box__feature border border-[#CBCBCB] py-6 px-4 rounded-lg">
+                            <div className="box__feature border border-[#CBCBCB] py-6 px-4 rounded-lg text-[#000000] text-base md:text-xl">
                                     <div className="item flex justify-between max-w-[294px] mb-6  ">
-                                        <span>جنس</span>
+                                        <span className=''>جنس</span>
                                         <span>چرم مصنوعی</span>
                                     </div>
                                     <div className='border-b  border-[#CBCBCB]'></div>
                                     <div className="item flex justify-between max-w-[294px] mb-6 mt-6">
-                                        <span>جنس زیره</span>
+                                        <span className=''>جنس زیره</span>
                                         <span>ترموپلاستیک پلی اورتان</span>
                                     </div>
                                     <div className='border-b  border-[#CBCBCB]'></div>
                                     <div className="item flex justify-between max-w-[294px] mb-6 mt-6">
-                                        <span>ویژگی کفی کفش</span>
+                                        <span className=''>ویژگی کفی کفش</span>
                                         <span>طبی قابل تعویض</span>
                                     </div>
                                     <div className='border-b  border-[#CBCBCB]'></div>
                                     <div className="item flex justify-between max-w-[294px] mt-6">
-                                        <span>جنس</span>
+                                        <span className='l'>جنس</span>
                                         <span>چرم مصنوعی</span>
                                     </div>
                             </div>
@@ -160,8 +171,52 @@ function Detailsprodcut() {
                         یکی از دلایلی که باعث شده نایک به انتخاب اول تمامی ورزشکار های دنیا تبدیل شود. تکنولوژی ها و ویژگی های پیشرفته ای است که نایکی در تولید کفش های خود از آن بهره میبرد. کفش های نایک علاوه بر داشتن تکنولوژی هایی مانند Nike Air, Zoomx, Nike React و … دارای برخی ویژگی ها مثل وزن سبک، انعطاف پذیری بالا، تنفس پذیری و قابلیت تهویه هوا، بازگشت انرژی و راحتی فوق العاده است که در ادامه به آنها میپردازیم.
                         اما توجه داشته باشید که تنها کفش های نایک اصل دارای چنین مشخصاتی هستند و کفش های کپی، های کپی، کوالی مستر و … فاقد هر گونه تکنولوژی و فناوری هستند و تنها ظاهر نمونه اورجینال کفش را تولید میکنند. اگر قصد خرید کفش نایک اصل را دارید یا میخواهید از اصل بودن کفش نایک خود مطمئن شوید توصیه میکنیم مقاله تشخیص کفش نایک اصل را مطالعه کنید.
                         </div>
+
+                        <div className="wrapper__comment grid grid-cols-12 gap-x-6">
+                            <div className="commnnet__b space-y-3 col-span-8 ">
+                                <BoxComment></BoxComment>
+                                <BoxComment></BoxComment>
+                                <BoxComment></BoxComment>
+                                <BoxComment></BoxComment>
+                            </div>
+
+                            <div className='col-span-4'>
+                            <div>
+                                <h6 className='text-[#000306] text-lg max-sm:text-xs font-MorabbaBold'>نظرت رو برامون بنویس</h6>
+                                <div className='border border-[#CBCBCB] my-3'></div>
+                                <span className='text-[#868686] text-sm'>ایمیل شما نشان داده نمی‌شود.</span>
+                            </div>
+
+                            <div className=''>
+                                <label htmlFor="" className='mb-2 inline-block' >نام </label>
+                                <input type="text" className='border border-[#ADADAD] w-full rounded-lg p-[9.7px]' name="" id="" />
+                                <label htmlFor="" className='mb-2 inline-block'>ایمیل  </label>
+                                <input type="text" className='border border-[#ADADAD] w-full mb-8  rounded-lg p-[9.7px]'  name="" id="" />
+
+                                <textarea name="" className='w-full pr-2 pt-2 pb-22 border border-[#ADADAD]'  placeholder='نظر خود را بنویسید ' id=""></textarea>
+                                
+                            </div>
+                                        <div className='flex-center '>
+                                            
+                                            <button type='submit' className='border-2 cursor-pointer border-orange-noraml text-center font-MorabbaMedium text-orange-noraml py-2 px-8 rounded-sm   '>ثبت نظر و امتیاز</button>
+                                        </div>
+                            </div>
+                        </div>
+
+                
+
                 </div>
             </main>
+                            <div className='my-[80px]'>
+                                <TopFooter />
+                            </div>
+
+                            <div>
+                                <Footer />
+                            </div>
+
+           
+
         </>
     )
 }

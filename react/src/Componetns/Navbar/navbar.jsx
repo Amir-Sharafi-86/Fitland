@@ -12,6 +12,10 @@ function Navbar() {
     
   }
 
+  function showBasket () {
+      setIsShow(!isShow)
+  }
+
   return (
     <>
 
@@ -49,6 +53,7 @@ function Navbar() {
             </form>
           </div>
 
+
           <div className="shrink-0 flex gap-x-4">
             <button className="bg-[#FFFFFF] flex flex-center gap-x-1.5 shadow-helper-class rounded-xl p-2.5">
               <span className="text-[#404040] text-sm md:text-base font-MorabbaBold">ثبت‌ نام | ورود</span>
@@ -68,31 +73,86 @@ function Navbar() {
               </svg>
             </button>
 
-            <button className="bg-orange-noraml p-3 rounded-xl relative">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6 text-white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-                />
-              </svg>
+                <div className=''>
+                  
+                 <button className="bg-orange-noraml p-3 relative rounded-xl z-999 cursor-pointer" onClick={showBasket}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-6 text-white"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
 
-              <div className="absolute -top-1 -left-1 flex-center text-[10px] size-4 rounded-full bg-midnight text-white">0</div>
-            </button>
+                <div className="absolute -top-1 -left-1 flex-center text-[10px] size-4 rounded-full bg-midnight text-white">0</div>
+                 </button>
+
+                 {/*//? basket  */}
+                  {isShow === true && (
+                      <div className="basket absolute top-full left-0 z-999  ">
+              <div className="w-80 xs:w-[362px] bg-white dark:bg-darker rounded-lg">
+          <div className="flex items-center justify-between px-5 py-4 bg-sky-50 dark:bg-sky-500/10 text-sky-500 mb-5 rounded-t-2xl">
+              <span className="font-danaBold">سبد خرید من</span>
+              <span className="font-danaDemiBold text-slate-500">1 دوره</span>
           </div>
+                <div className="cart-body pl-5 pr-2.5 mr-2.5 space-y-4 max-h-62 overflow-y-auto direction-ltr child:direction-rtl">
+                            <div className="cart-item flex items-center gap-x-3">
+                          <a href="https://sabzlearn.ir/course/game-dev-js/" className="shrink-0">
+                              <img src="./public/images/main/shoesMain.png" className='h-15 aspect-video' alt="" />
+                              {/* <img className=" h-15 aspect-video rounded-lg" src="https://sabzlearn.ir/wp-content/uploads/2024/11/game-js-1-300x169.webp" alt="بازی سازی تحت وب با JS"`/> */}
+                          </a>
+                          <div className="flex flex-col justify-between font-MorabbaBold">
+                              <a href="https://sabzlearn.ir/course/game-dev-js/" className="line-clamp-2 font-danaMedium text-sm">
+                    بازی سازی تحت وب با JS                        </a>
+                              <div className="flex items-center gap-x-2 text-slate-500 dark:text-gray-400">
+                                                                    <div className="flex items-center gap-x-1">
+                                          <span className="font-danaMedium text-sm">
+                                              1,200,000 <span className="font-danaMedium text-xs pt-1 outline-black">تومان</span>                                    </span>
+                                      </div>
+                                            </div>
+                          </div>
+                                              <button className="text-gray-400 hover:text-red-500 mr-auto" onclick="sthe_remove_item_from_cart(83 , `528ca2f03c`)">
+                              <svg className="size-4 transition-colors">
+                                  <use href="#trash"></use>
+                              </svg>
+                          </button>
+                                          </div>
+                    </div>
+                  <div className="mt-5 px-5 pb-5">
+                  <div className="flex items-center justify-between border-t border-neutral-200 dark:border-white/10 pt-4 mb-5">
+                      <span>مبلغ قابل پرداخت:</span>
+                      <div className="flex items-center gap-x-1">
+                          <span className="text-lg font-danaDemiBold">
+                              1,200,000 <span className="font-danaMedium text-base">تومانءء</span>                    </span>
+                      </div>
+                  </div>
+                  <a href="https://sabzlearn.ir/cart" class="btn-orange font-MorabbaBold">مشاهده سبد خرید</a>
+              </div>
+        </div>
+                      </div>
+                  )}
+            
+                </div>
+
+          </div>
+
+          
+
         </div>
 
         <NavMenu />
       </div>
 
       {/* //? header menuMobile  */}
+
+                  
       <div className="mobile-menu p-6 block md:hidden">
         <div className="flex justify-between items-center">
           <img src="/images/header/logo.png" className="w-[90px]" alt="" />
@@ -136,6 +196,8 @@ function Navbar() {
         </div>
       </div>
 
+     
+
 
       {/* //? header menuMobile  Main */}
 
@@ -150,7 +212,7 @@ function Navbar() {
                 
     </div>
     
-    <Overlay isVisible={isShow} onClick={showMenuMobile} />
+     {isShow && <Overlay isVisible={isShow} onClick={showMenuMobile} />}
     </>
   )
 }

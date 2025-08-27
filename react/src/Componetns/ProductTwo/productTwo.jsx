@@ -56,7 +56,18 @@ function ProductTwo() {
               title="ست نایک مدل S-2000"
               price="۳۰۰,۰۰۰ تومان"
               size="از سایز L تا XXL"
-              img="/public/images/main/prodcuttwos.png"
+              img="./public/images/main/shoesMain.png"
+              delay="0"
+              duration="800"
+              
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ProductDetailsTwo
+              title="ست نایک مدل S-2000"
+              price="۳۰۰,۰۰۰ تومان"
+              size="از سایز L تا XXL"
+              img="./public/images/main/mainDress.png"
               delay="0"
               duration="800"
               
@@ -67,34 +78,25 @@ function ProductTwo() {
               title="ست نایک مدل S-2000"
               price="۳۰۰,۰۰۰ تومان"
               size="از سایز L تا XXL"
-              img="/public/images/main/prodcuttwos.png"
+              img="./public/images/main/shoesMain.png"
               delay="0"
               duration="800"
               
             />
           </SwiperSlide>
+
            <SwiperSlide>
             <ProductDetailsTwo
               title="ست نایک مدل S-2000"
               price="۳۰۰,۰۰۰ تومان"
               size="از سایز L تا XXL"
-              img="/public/images/main/prodcuttwos.png"
+              img="./public/images/main/mainDress.png"
               delay="0"
               duration="800"
               
             />
           </SwiperSlide>
-           <SwiperSlide>
-            <ProductDetailsTwo
-              title="ست نایک مدل S-2000"
-              price="۳۰۰,۰۰۰ تومان"
-              size="از سایز L تا XXL"
-              img="/public/images/main/prodcuttwos.png"
-              delay="0"
-              duration="800"
-              
-            />
-          </SwiperSlide>
+       
 
        
         </Swiper>

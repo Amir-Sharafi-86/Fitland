@@ -3,7 +3,8 @@ import Topbar from '../Topbar/topbar'
 import Navbar from '../Navbar/navbar'
 function Header() {
     return (
-        <header className='relative z-999 bg-white'>
+        
+        <header className='relative max-md:z-50 bg-white'>
             <Topbar />
             
             <Navbar  />

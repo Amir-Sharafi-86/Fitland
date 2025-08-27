@@ -21,7 +21,7 @@ function ProdcutsDetailsTree(props) {
                     >
 
                         <div className='relative'>
-                            <img src={props.img} className='rounded-md w-full max-sm:h-[280px]' />
+                            <img src={props.img} className='rounded-md w-full max-sm:h-[280pxs]' />
                         </div>
                         {
                             props.isTrue === "true" ? (

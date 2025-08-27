@@ -1,14 +1,13 @@
-import React  from 'react';
-import ProdcutsDetailsTree from '../ProdcutsDetailsTree/ProdcutsDetailsTree';
+import React from 'react'
+import ProdcutsDetailsTree from '../../Componetns/ProdcutsDetailsTree/ProdcutsDetailsTree'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-function ProductsTree() {
+function RelatedProduct() {
     return (
-        <div className='w-full bg-white mt-20 pb-9 '>
-          <h1 className=' max-md:text-base text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold pt-8'>جدید ترین کفش های ورزشی </h1>
-          <div className='container '>
+        <div>
+             <div className='container '>
             <div className='relative hidden md:flex gap-x-2.5 bottom-4.5  '>  
             <button 
       className='cursor-pointer  rounded-full mb-8 p-2 swiper-button-next absolute top-1/2 right-0 w-10 h-10 -translate-y-1/2 z-20'
@@ -98,7 +97,7 @@ function ProductsTree() {
             </Swiper>
           </div>
         </div>
-      );
+    )
 }
 
-export default ProductsTree
+export default RelatedProduct

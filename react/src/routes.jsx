@@ -13,7 +13,7 @@ const routes = [
   { path: '*', element: <Notfound /> },
   { path: '*', element: <Notfound /> },
   { path: '/login', element: <Login /> },
-  { path: '/Detailsprodcut', element: <Detailsprodcut /> },
+  { path: '/product/:productName', element: <Detailsprodcut /> },
 ];
 
 export default routes;

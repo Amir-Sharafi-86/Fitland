@@ -1,6 +1,8 @@
 import React from 'react'
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { Link } from 'react-router-dom';
+
 
 function Login() {
 
@@ -74,9 +76,11 @@ function Login() {
         alt="Login visual" 
       />
 
- <div className='absolute top-1/2 left-1/2 transform z-999   -translate-x-1/2 -translate-y-1/2 text-black text-center'>
+ <div className='absolute top-1/2 left-1/2  cursor-pointer transform z-999   -translate-x-1/2 -translate-y-1/2 text-black text-center'>
     <img src="/images/header/logo.png" alt="logo" className='' />
-    <h1 className='mb-4 font-MorabbaBold text-lg  text-white mt-6'>برگشت به صفحه اصلی</h1>
+    <Link to={`/`}>
+        <h1 className='mb-4 font-MorabbaBold text-lg  text-white mt-6'>برگشت به صفحه اصلی</h1>
+    </Link>
  </div>
     <div className='absolute top-0 left-0 w-full h-full bg-black/90'></div>
     </div>
