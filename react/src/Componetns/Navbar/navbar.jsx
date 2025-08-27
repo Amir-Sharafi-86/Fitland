@@ -5,15 +5,15 @@ import Overlay from '../overlay/overlay'
 
 function Navbar() {
   const [isShow , setIsShow ] = useState(false)
+  const [isBasketOpen, setIsBasketOpen] = useState(false);
 
   function showMenuMobile () {
     setIsShow(!isShow)
-    console.log(isShow);
     
   }
 
   function showBasket () {
-      setIsShow(!isShow)
+      setIsBasketOpen(!isBasketOpen)
   }
 
   return (
@@ -95,7 +95,7 @@ function Navbar() {
                  </button>
 
                  {/*//? basket  */}
-                  {isShow === true && (
+                  {isBasketOpen === true && (
                       <div className="basket absolute top-full left-0 z-999  ">
               <div className="w-80 xs:w-[362px] bg-white dark:bg-darker rounded-lg">
           <div className="flex items-center justify-between px-5 py-4 bg-sky-50 dark:bg-sky-500/10 text-sky-500 mb-5 rounded-t-2xl">
@@ -211,8 +211,10 @@ function Navbar() {
                 <button className="w-full text-center py-2 hover:bg-gray-100 rounded">سوالات متداول</button>
                 
     </div>
-    
-     {isShow && <Overlay isVisible={isShow} onClick={showMenuMobile} />}
+                  
+{isShow && <Overlay onClick={() => setIsShow(false)} />}
+{isBasketOpen && <Overlay onClick={() => setIsBasketOpen(false)} />}
+
     </>
   )
 }

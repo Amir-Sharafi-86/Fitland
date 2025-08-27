@@ -29,18 +29,18 @@ function Product() {
                             <span className='text-[#868686]'>حذف فیلترها</span>
                           </div>
                        <div>
-                          <div className='flex-justify'>
+                          <div className='flex-justify mb-4 '>
                             <span className='text-[#000306] text-sm font-MorabbaMedium'>محصولات موجود </span>
                                  <label className='toggle-btn'>
                                       <input type="checkbox" className='toggle-btn__input hidden' name="" id="" />
-                                      <span className='toggle-btn__marker block bg-[#EEEEEE] w-11 h-6 rounded-full relative'></span>
+                                      <span className='toggle-btn__marker block  cursor-pointer bg-[#EEEEEE] w-11 h-6 rounded-full relative'></span>
                                  </label>
                           </div>
-                          <div className='flex-justify'>
+                          <div className='flex-justify transition-all '>
                             <span className='text-[#000306] text-sm font-MorabbaMedium'>محصولات تخفیف دار </span>
                                  <label className='toggle-btn'>
                                       <input type="checkbox" className='toggle-btn__input hidden' name="" id="" />
-                                      <span className='toggle-btn__marker block bg-[#EEEEEE] w-11 h-6 rounded-full relative'></span>
+                                      <span className='toggle-btn__marker block cursor-pointer bg-[#EEEEEE] w-11 h-6 rounded-full relative'></span>
                                  </label>
                           </div>
                           

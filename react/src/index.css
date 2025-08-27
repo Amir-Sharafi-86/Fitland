@@ -21,6 +21,9 @@
         justify-content: center;
         align-items: center;
     }
+    .content-shadow {
+        background: linear-gradient(to top, rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0));
+    }
     .shadow-helper-class {
         box-shadow: 0px 0px 20px 2px #00000014;
     }

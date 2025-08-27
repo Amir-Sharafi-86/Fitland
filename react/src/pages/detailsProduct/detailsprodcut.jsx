@@ -27,7 +27,7 @@ function Detailsprodcut() {
                               <img src="/images/main/detailsImg.jpg" className='rounded-md' alt="" />
                         </div>
 
-                        <div className='lg:w-1/2 left-content'>
+                        <div className='lg:w-1/2 left-content max-lg:mt-8'>
                             <div className="main__content">
                                 <div className="header mb-4">
                                     <span className='text-[#000306] font-MorabbaMedium mb-2 text-[28px]'>KD17</span>
@@ -62,9 +62,9 @@ function Detailsprodcut() {
                                     </div>
 
                                     <div className='mt-15 block '>
-                                        <h1 className='text-black-mainTwo text-lg lg:text-2xl'>رنگ</h1>
+                                        <h1 className='text-black-mainTwo text-lg lg:text-2xl font-MorabbaMedium'>رنگ</h1>
 
-                                        <div className='flex   items-center'>
+                                        <div className='flex   items-center mt-3'>
 
                                             <div className='inline-flex  gap-x-1 px-1.5 py-1 items-center bg-[#EDEDED] rounded-sm '>
                                                 <span className='bg-[#C4A97C] size-6 rounded-full block '></span>
@@ -87,9 +87,11 @@ function Detailsprodcut() {
 
                                         </div>
 
+                                            
+
                                     </div>
 
-                                    <div className='mt-5 flex justify-between'>
+                                    <div className='mt-5  justify-between max-lg:gap-x-5 hidden lg:flex'>
                                             <button className='border-2 flex-center text-orange-noraml border-orange-noraml px-8 h-14 rounded-sm'>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 text-orange-noraml">
     <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
@@ -122,6 +124,34 @@ function Detailsprodcut() {
                                         </div>
                                     </div>
 
+                                    <div className='lg:hidden mt-10 flex items-center justify-between'>
+                                    <button className='border-2 flex-center text-orange-noraml border-orange-noraml py-2 px-12  rounded-sm'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 text-orange-noraml">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
+    </svg>
+                                                <h1 className='font-MorabbaMedium'>1</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 text-orange-noraml">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+    </svg>
+
+
+                                            </button>
+                                            <div className='text-[#2F5F8A] flex gap-x-4 items-end'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+</svg>
+
+                                        </div>
+                                    </div>
+                                    <div className='lg:hidden mt-4'>
+                                        <button className='bg-orange-noraml flex-center text-white gap-x-2 font-MorabbaMedium w-full py-2 px-4 rounded-md'>افزودن به سبد خرید</button>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
@@ -129,7 +159,6 @@ function Detailsprodcut() {
 
                        
                     </div>
-
 
                     <div className="feature mb-8">
                             <ul className='text-[#194165] text-2xl max-sm:text-base gap-x-4.5 mb-8 flex mt-20  items-center font-MorabbaMedium'>
@@ -167,20 +196,20 @@ function Detailsprodcut() {
                             </div>
                         </div>
 
-                        <div className='paragraph p-8 text-black-mainTwo leading-6 font-MorabbaMedium border border-[#CBCBCB] mb-8 rounded-lg'>
+                        <div className='paragraph   p-8 text-black-mainTwo leading-6 font-MorabbaMedium border border-[#CBCBCB] mb-8 rounded-lg'>
                         یکی از دلایلی که باعث شده نایک به انتخاب اول تمامی ورزشکار های دنیا تبدیل شود. تکنولوژی ها و ویژگی های پیشرفته ای است که نایکی در تولید کفش های خود از آن بهره میبرد. کفش های نایک علاوه بر داشتن تکنولوژی هایی مانند Nike Air, Zoomx, Nike React و … دارای برخی ویژگی ها مثل وزن سبک، انعطاف پذیری بالا، تنفس پذیری و قابلیت تهویه هوا، بازگشت انرژی و راحتی فوق العاده است که در ادامه به آنها میپردازیم.
                         اما توجه داشته باشید که تنها کفش های نایک اصل دارای چنین مشخصاتی هستند و کفش های کپی، های کپی، کوالی مستر و … فاقد هر گونه تکنولوژی و فناوری هستند و تنها ظاهر نمونه اورجینال کفش را تولید میکنند. اگر قصد خرید کفش نایک اصل را دارید یا میخواهید از اصل بودن کفش نایک خود مطمئن شوید توصیه میکنیم مقاله تشخیص کفش نایک اصل را مطالعه کنید.
                         </div>
 
-                        <div className="wrapper__comment grid grid-cols-12 gap-x-6">
-                            <div className="commnnet__b space-y-3 col-span-8 ">
+                        <div className="wrapper__comment grid md:grid-cols-12 gap-x-6">
+                            <div className="commnnet__b space-y-3  col-span-12  max-md:mx-auto md:col-span-8 ">
                                 <BoxComment></BoxComment>
                                 <BoxComment></BoxComment>
                                 <BoxComment></BoxComment>
                                 <BoxComment></BoxComment>
                             </div>
 
-                            <div className='col-span-4'>
+                            <div className=' col-span-12 max-md:mt-10 md:col-span-4'>
                             <div>
                                 <h6 className='text-[#000306] text-lg max-sm:text-xs font-MorabbaBold'>نظرت رو برامون بنویس</h6>
                                 <div className='border border-[#CBCBCB] my-3'></div>
@@ -207,11 +236,11 @@ function Detailsprodcut() {
 
                 </div>
             </main>
-                            <div className='my-[80px]'>
+                            <div className='my-[80px] max-md:hidden'>
                                 <TopFooter />
                             </div>
 
-                            <div>
+                            <div className='max-md:mt-[140px]'>
                                 <Footer />
                             </div>
 
