@@ -84,7 +84,7 @@ function FooterContent() {
             </ul>
             </div>
             <div className="parent-content">
-                <h1 className='text-white text-sm font-MorabbaBold '>برای دریافت تخفیف های بیشتر ما را دنبال کنید!</h1>
+                <h1 className='text-white text-sm font-MorabbaBold  text-center'>برای دریافت تخفیف های بیشتر ما را دنبال کنید!</h1>
                 <div className='flex-center gap-x-11.5 mt-4 max-lg:mb-9'>
                 <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -246,6 +246,15 @@ function FooterContent() {
         <div className="content__text  mr-[4rem] max-w-[79%] max-xl:mr-[3rem] sm:mr-[5rem]  text-white ">
         فروشگاه لوازم ورزشی فیت‌لند در سال 1403 کار خود را به صورت حرفه ای آغاز کرد و با هدف ارائه جدیدترین محصولات ورزشی از قبیل لوازم فوتبال، فوتسال، والیبال، بسکتبال، تنیس و... همچنین پوشاک ورزشی و تجهیزات سفر، از برند های معتبر دنیا در محیطی کاربرپسند، قابل اطمینان و با مجربترین مشاوران و کارشناسان ورزشی فعالیت می کند. فروشگاه فیت‌لند دارای نماد اعتماد از وزارت صنعت معدن و تجارت می باشد و تمامی محصولات خود را با 7 روز ضمانت بازگشت همراه با گارانتی اصالت و سلامت فیزیکی، با سریع ترین روش های ارسال به سراسر ایران در اختیار مشتریان خود قرار می دهد.
      </div>
+<div className="icon  hidden flex-col items-center  max-sm:flex mt-10">
+             <div className='flex gap-x-6'>
+                <img src="./images/footer/01.png" alt="" />
+                <img src="./images/footer/01.png" alt="" />
+                <img src="./images/footer/01.png" alt="" />
+            </div>
+            <p className='text-[#F9F9F9] text-xs font-MorabbaBold mt-6 ' style={{wordSpacing : "3px"}}>یک هفته ضمانت بازگشت ✍</p>
+            </div>
+     
      
          <div>
                  <div className="developer py-4 max-sm:flex-col max-sm:gap-y-6 flex justify-between items-center max-sm:mt-10">
