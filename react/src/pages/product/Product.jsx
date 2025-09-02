@@ -19,17 +19,19 @@ function Product() {
                 <Header></Header>
                 <main className='max-w-[1440px] mx-auto'>
 
-                <section className='  max-sm:mt-6 mt-[112px]'>
+                <section className='max-sm:mt-6 mt-[112px]'>
                   <div className="container ">
                     <div className='lg:grid lg:grid-cols-12   '>
-                        <div className="filter-box max-lg:hidden border p-[17px] w-[288px] h-[405px] border-[#CBCBCB] py-4 px-4.5 rounded-2xl bg-white lg:col-span-2  " >
+                        <div className="filter-box max-lg:hidden border p-[17px] w-[288px] h-[350px] border-[#CBCBCB] py-4 px-4.5 rounded-2xl bg-white lg:col-span-2  " >
                          
                           <div className="header-filter flex-justify mb-4 text-sm font-MorabbaMedium">
                             <span className=' text-black-mainTwo font-MorabbaMedium'>فیلترها</span>
                             <span className='text-[#868686]'>حذف فیلترها</span>
                           </div>
-                       <div>
-                          <div className='flex-justify mb-4 '>
+
+
+                       <div className='space-y-5'>
+                          <div className='flex-justify  transition-all '>
                             <span className='text-[#000306] text-sm font-MorabbaMedium'>محصولات موجود </span>
                                  <label className='toggle-btn'>
                                       <input type="checkbox" className='toggle-btn__input hidden' name="" id="" />
@@ -43,45 +45,18 @@ function Product() {
                                       <span className='toggle-btn__marker block cursor-pointer bg-[#EEEEEE] w-11 h-6 rounded-full relative'></span>
                                  </label>
                           </div>
+                          <div className='flex-justify transition-all '>
+                            <span className='text-[#000306] text-sm font-MorabbaMedium'>محصولات تخفیف دار </span>
+                                 <label className='toggle-btn'>
+                                      <input type="checkbox" className='toggle-btn__input hidden' name="" id="" />
+                                      <span className='toggle-btn__marker block cursor-pointer bg-[#EEEEEE] w-11 h-6 rounded-full relative'></span>
+                                 </label>
+                          </div>
                           
                        </div>
 
 
-                        <div className='filter-main mt-10 space-y-10'>
-                          <div className='flex-justify'>
-
-                              <span>قیمت</span>
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4.5 text-[#ADADAD]">
-  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-</svg>
-
-                          </div>
-                          <div className='flex-justify'>
-
-                              <span>قیمت</span>
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4.5 text-[#ADADAD]">
-  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-</svg>
-
-                          </div>
-                          <div className='flex-justify'>
-
-                              <span>قیمت</span>
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4.5 text-[#ADADAD]">
-  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-</svg>
-
-                          </div>
-                          <div className='flex-justify'>
-
-                              <span>قیمت</span>
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4.5 text-[#ADADAD]">
-  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-</svg>
-
-                          </div>
-                        </div>
-
+                   
                         </div>
 
                         <div className='lg:col-span-10  lg:mr-32'>

@@ -19,7 +19,9 @@ function ProductDetailsOne(props) {
              data-aos-delay={props.delay}
              data-aos-duration={props.duration}
             >
-  <img src={props.img} className="w-full rounded-md max-sm:h-[216px] "   alt="" />
+  <div>
+    </div>            
+  <img src={props.img} className="w-full sm:w-[392px] rounded-md max-sm:h-[216px] sm:aspect-[3/3]  overflow-hidden "   alt="" />
   <div className="absolute left-0 right-0 -bottom-[3.5rem]  bg-[#021526] text-white transform -skew-y-6 rounded-3xl max-xs:p-3.5 max-sm:p-4 p-6.5 md:p-10 z-10 overflow-hidden">
     <div className="transform skew-y-6">
       <span className="font-MorabbaBold text-[21.8px] max-sm:whitespace-nowrap max-sm:text-[10px] block">

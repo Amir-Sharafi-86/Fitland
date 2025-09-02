@@ -27,7 +27,7 @@ function Main() {
             <BannerTree />
             <Exercise />
             <TopFooter />    
-            <Footer></Footer>
+            <Footer />
         </>
     )
 }

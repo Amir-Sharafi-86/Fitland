@@ -20,7 +20,7 @@ function ProductsFourDetails(props) {
                           data-aos-duration={props.duration}
                         >
     
-                            <div className='relative'>
+                            <div className='relative sm:aspect-[3/2.1.75] overflow-hidden'>
                                 <img src={props.img} className='rounded-md  max-sm:h-[280px]' />
                             </div>
                             {

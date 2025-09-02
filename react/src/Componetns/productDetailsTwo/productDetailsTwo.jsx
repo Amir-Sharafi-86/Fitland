@@ -23,8 +23,8 @@ function ProductDetailsTwo(props ,) {
                       data-aos-duration={props.duration}
                     >
 
-                        <div className='relative'>
-                            <img src={props.img} className='rounded-md w-full  max-sm:h-[280px]' />
+                        <div className='relative sm:aspect-[3/2.1.75] overflow-hidden'>
+                            <img src={props.img} className='rounded-md w-full h-full object-cover  max-sm:h-[280px]' />
                         </div>
                         {
                             props.isTrue === "true" ? (

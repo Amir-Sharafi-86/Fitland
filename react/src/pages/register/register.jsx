@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
 
-function Login() {
+function Register() {
 
     const formik  = useFormik({
         initialValues : {
@@ -35,7 +35,7 @@ function Login() {
     {/* Right side: Login form */}
     <div className="w-1/2 flex justify-center items-center bg-white">
       <div className="form w-full sm:w-[456px] border border-[#EDEDED] p-8.5">
-        <h1 className='text-[#000000] text-[28px] mb-8 font-MorabbaMedium'>ورود | ثبت‌نام</h1>
+        <h1 className='text-[#000000] text-[28px] mb-8 font-MorabbaMedium'> ثبت‌نام</h1>
 
         {/* Formik form */}
         <form onSubmit={formik.handleSubmit} >
@@ -104,4 +104,4 @@ function Login() {
     )
 }
 
-export default Login
+export default Register

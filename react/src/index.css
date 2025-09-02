@@ -43,6 +43,7 @@
         transition: all 50ms ease-in-out;
     }
     .toggle-btn__input:checked  + .toggle-btn__marker {
+        transition:  all 150ms;
         background-color: #003566;
         border: none;
     }

@@ -6,6 +6,7 @@ import Product from './pages/product/Product';
 import Login from './pages/login/login';
 import Notfound from './pages/notFount/notfound';
 import Detailsprodcut from './pages/detailsProduct/detailsprodcut';
+import Register from './pages/register/register';
 const routes = [
   { path: '/', element: <Index /> },
   { path: '/dashboard', element: <Dashboard /> },
@@ -13,6 +14,7 @@ const routes = [
   { path: '*', element: <Notfound /> },
   { path: '*', element: <Notfound /> },
   { path: '/login', element: <Login /> },
+  { path: '/register', element: <Register /> },
   { path: '/product/:productName', element: <Detailsprodcut /> },
 ];
 
