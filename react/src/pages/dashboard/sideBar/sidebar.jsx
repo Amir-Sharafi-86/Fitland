@@ -2,8 +2,8 @@ import React from 'react'
 
 function Sidebar() {
     return (
-        <div className='sidebar  sm:w-[288px]  bg-white px-8 py-12  max-sm:shadow-none box__shadow lg:col-span-4'>
-                                   <div className="user-profile max-sm:flex-row max-sm:gap-x-2 flex flex-col justify-center items-center   rounded-tr-2xl rounded-tl-2xl gap-y-2">
+        <div className='sidebar  sm:w-[288px]  bg-white px-8 py-12 max-md:hidden  box__shadow lg:col-span-4'>
+                                   <div className="user-profile  flex flex-col justify-center items-center   rounded-tr-2xl rounded-tl-2xl gap-y-2">
                                    <img src="/images/main/userProfile.png" className='size-11 sm:size-25' alt="" />
                                     <div className='flex flex-col gap-y-2'>
                                              <span className='text-xs font-MorabbaMedium'>مهسا شیرین زبان</span>

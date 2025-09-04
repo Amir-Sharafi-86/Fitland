@@ -27,8 +27,8 @@ const routes = [
       path: "/my-account/*",
       element: <IndexPage />,
       children: [
-            { path: "EditInfo", element: <EditInfo /> },
-            { path: "", element: <IndexPgaeUser /> },
+            { path: "EditInfo", element: <IndexPgaeUser /> },
+            { path: "", element: <EditInfo /> },
       ],
     },
 ];

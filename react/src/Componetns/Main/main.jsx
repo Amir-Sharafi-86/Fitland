@@ -18,29 +18,30 @@ import Loading from '../loading/loading'
 
 function Main() {
     const [showOverlay , setShowOverlay ]  = useState(false)
-
+    const [loading , setLoding ]  = useState(false)
+    
     useEffect(() => {
+        setShowOverlay(true); 
 
-      const timer =  setTimeout(() => {
-            setShowOverlay(true)
-            toast.info(
+        toast.info(
                 'اپلود ممکن است کمی طول بکشد...', {
                 position: "top-right",
-                autoClose: 10000,  
-                onClose :() => {
-                    setShowOverlay(false)
-                },
+                autoClose: 2000,
                 closeButton : false,
-                style: { color: '#1565C0', fontWeight: 'bold'}   ,
+                style: { color: '#1565C0', fontWeight: 'bold',}   ,
                 progress: undefined,
                 
             })
-        } ,100)
-        
-        return () => clearTimeout(timer)
-       
 
-    } , [])
+        setLoding(true)
+        const timer = setTimeout(() => {
+          setShowOverlay(false); 
+          setLoding(false)
+        }, 100);
+      
+        return () => clearTimeout(timer); 
+      }, []);
+      
 
 
 
@@ -64,10 +65,14 @@ function Main() {
 
 
 
-            {showOverlay && <ToastContainer style={{zIndex:100001 , }} />}
-            { showOverlay && <Loading />}
+            {showOverlay && <ToastContainer style={{zIndex:100001 , }}  />}
+            {loading && <Loading />}
         </>
     )
 }
 
 export default Main
+
+
+
+
