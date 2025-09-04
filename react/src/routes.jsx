@@ -1,7 +1,9 @@
 // routes.jsx
 import React from 'react'; 
 import Index from './pages/Index';
-import Dashboard from './pages/dashboard';
+import IndexPage from './pages/dashboard';
+// import In2dex from './pages/dashboard';
+// import Dashboard from './pages/dashboard';
 import Product from './pages/product/Product';
 import Login from './pages/login/login';
 import Notfound from './pages/notFount/notfound';
@@ -23,7 +25,7 @@ const routes = [
 
    {
       path: "/my-account/*",
-      element: <Dashboard />,
+      element: <IndexPage />,
       children: [
             { path: "EditInfo", element: <EditInfo /> },
             { path: "", element: <IndexPgaeUser /> },

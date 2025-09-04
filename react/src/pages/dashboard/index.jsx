@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../../Componetns/Header/header'
 import Sidebar from './sideBar/sidebar'
 import { Outlet } from 'react-router-dom'
-function IndexUserPgae() {
+function IndexPage() {
     return (
         <>
             <Header />
@@ -20,4 +20,4 @@ function IndexUserPgae() {
     )
 }
 
-export default IndexUserPgae
+export default IndexPage

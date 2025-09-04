@@ -1,7 +1,6 @@
 import React from 'react'
 import ProductDetailsOne from '../productDetailsOne/productDetailsOne';
-
-
+import { Link } from 'react-router-dom'
 function ProductOne() {
     return (
         <div className='my-[80px] container flex  justify-center sm:justify-between items-end gap-4.5 md:gap-9'>
@@ -19,7 +18,7 @@ function ProductOne() {
 
                     <button className='btn-orange flex justify-center items-end'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-white border border-white rounded-full p-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path></svg>
-                    <a href="" class="text-white text-base max-sm:text-xs whitespace-nowrap max-sm:w-full font-MorabbaBold">مشاهده همه محصولات</a>
+                    <Link to={"/product"} class="text-white text-base max-sm:text-xs whitespace-nowrap max-sm:w-full font-MorabbaBold">مشاهده همه محصولات</Link>
                     </button>
 
         </div>
