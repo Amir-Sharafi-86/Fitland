@@ -21,6 +21,9 @@
         justify-content: center;
         align-items: center;
     }
+    .loading__container {
+        backdrop-filter: blur(2rem);
+    }
     .content-shadow {
         background: linear-gradient(to top, rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0));
     }

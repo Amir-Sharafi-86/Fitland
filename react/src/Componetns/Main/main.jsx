@@ -11,10 +11,9 @@ import BannerTree from '../bannerTree/bannerTree'
 import Exercise from '../exercise/exercise'
 import TopFooter from '../topFooter/topFooter'
 import Footer from '../Footer/footer'
-import Overlay from '../overlay/overlay'
 import 'react-toastify/dist/ReactToastify.css'
 import { ToastContainer, toast } from 'react-toastify'
-
+import Loading from '../loading/loading'
 
 
 function Main() {
@@ -24,14 +23,15 @@ function Main() {
 
       const timer =  setTimeout(() => {
             setShowOverlay(true)
-            toast.info('اپلود ممکن است کمی طول بکشد...', {
+            toast.info(
+                'اپلود ممکن است کمی طول بکشد...', {
                 position: "top-right",
-                autoClose: 3000,  // بعد از ۳ ثانیه بسته میشه
-                hideProgressBar: false,
-                pauseOnHover: true,
+                autoClose: 10000,  
                 onClose :() => {
                     setShowOverlay(false)
                 },
+                closeButton : false,
+                style: { color: '#1565C0', fontWeight: 'bold'}   ,
                 progress: undefined,
                 
             })
@@ -62,10 +62,10 @@ function Main() {
             <Footer />
 
 
-            {showOverlay &&  <Overlay/>}
 
 
-            {showOverlay && <ToastContainer />}
+            {showOverlay && <ToastContainer style={{zIndex:100001 , }} />}
+            { showOverlay && <Loading />}
         </>
     )
 }
