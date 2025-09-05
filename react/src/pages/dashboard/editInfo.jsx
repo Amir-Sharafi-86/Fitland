@@ -30,7 +30,7 @@ function EditInfo () {
 
                     </div>
                 </div>
-                <div className="wrapper__one flex justify-between items-center mt-10 w-[55%] max-sm:flex-col ">
+                <div className="wrapper__one max-md:items-start flex justify-between items-center mt-10 w-[55%] max-sm:flex-col ">
                     <div className="item-one flex flex-col gap-y-2 font-MorabbaMedium ">
                         <span className='text-[#606060] text-xl '>کد ملی</span>
                         <span className=' text-base text-[#000000]'>07822347</span>
@@ -40,8 +40,8 @@ function EditInfo () {
                         <span className=' text-base text-[#000000]'>زن</span>
                     </div>
                 </div>
-                <div className="wrapper__one flex justify-between items-center mt-10 w-[55%] max-sm:flex-col md:hidden ">
-                <div className="item-one flex flex-col gap-y-2 font-MorabbaMedium  ">
+                <div className="wrapper__one flex justify-between max-md:items-start items-center mt-10 w-[55%] max-sm:flex-col  md:hidden  ">
+                <div className="item-one flex flex-col gap-y-2 font-MorabbaMedium   ">
                         <span className='text-[#606060] text-xl '>شماره تلفن</span>
                         <span className=' text-base text-[#000000]'>09037447009</span>
                     </div>
