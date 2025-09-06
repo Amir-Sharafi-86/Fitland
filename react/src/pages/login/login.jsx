@@ -35,7 +35,7 @@ function Login() {
     {/* Right side: Login form */}
     <div className="w-1/2 flex justify-center items-center bg-white">
       <div className="form w-full sm:w-[456px] border border-[#EDEDED] p-8.5">
-        <h1 className='text-[#000000] text-[28px] mb-8 font-MorabbaMedium'>ورود | ثبت‌نام</h1>
+        <h1 className='text-[#000000] text-[28px] mb-8 font-MorabbaMedium'>ورود</h1>
 
         {/* Formik form */}
         <form onSubmit={formik.handleSubmit} >
@@ -77,6 +77,11 @@ function Login() {
           <button type="submit" className='btn-orange text-white font-MorabbaBold mt-4'>
             ادامه
           </button>
+          <Link to={`/register`}>
+              <span className='text-black text-[14.5px] font-MorabbaBold mt-4 flex-center inline-block'>
+                حساب کاربری ندارید ؟ ثبت نام کنید
+              </span>
+          </Link>
         </form>
       </div>
     </div>

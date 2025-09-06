@@ -5,7 +5,7 @@ function Notfound() {
         <div>
             <main>
                 <div className="container">
-                    
+                    <h1>not found</h1>
                 </div>
             </main>
         </div>

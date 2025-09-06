@@ -77,6 +77,11 @@ function Register() {
           <button type="submit" className='btn-orange text-white font-MorabbaBold mt-4'>
             ادامه
           </button>
+             <Link to={`/login`}>
+                        <span className='text-black text-[14.5px] font-MorabbaBold mt-4 flex-center inline-block'>
+                          حساب کاربری دارید  ؟ لاگین کنید
+                        </span>
+                    </Link>
         </form>
       </div>
     </div>

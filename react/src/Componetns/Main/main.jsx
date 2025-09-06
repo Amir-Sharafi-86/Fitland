@@ -15,64 +15,55 @@ import 'react-toastify/dist/ReactToastify.css'
 import { ToastContainer, toast } from 'react-toastify'
 import Loading from '../loading/loading'
 
-
 function Main() {
-    const [showOverlay , setShowOverlay ]  = useState(false)
-    const [loading , setLoding ]  = useState(false)
-    
-    useEffect(() => {
-        setShowOverlay(true); 
+  const [showOverlay, setShowOverlay] = useState(false)
+  const [loading, setLoding] = useState(false)
 
-        toast.info(
-                'اپلود ممکن است کمی طول بکشد...', {
-                position: "top-right",
-                autoClose: 2000,
-                closeButton : false,
-                style: { color: '#1565C0', fontWeight: 'bold',}   ,
-                progress: undefined,
-                
-            })
+  useEffect(() => {
+    const isFirstVisit = localStorage.getItem('firstVisitDone')
 
-        setLoding(true)
-        const timer = setTimeout(() => {
-          setShowOverlay(false); 
-          setLoding(false)
-        }, 100);
-      
-        return () => clearTimeout(timer); 
-      }, []);
-      
+    if (!isFirstVisit) {
+      setShowOverlay(true)
+      toast.info('اپلود ممکن است کمی طول بکشد...', {
+        position: 'top-right',
+        autoClose: 2000,
+        closeButton: false,
+        style: { color: '#1565C0', fontWeight: 'bold' },
+        progress: undefined,
+      })
 
+      setLoding(true)
+      const timer = setTimeout(() => {
+        setShowOverlay(false)
+        setLoding(false)
+        localStorage.setItem('firstVisitDone', 'true')
+      }, 8000)
 
+      return () => clearTimeout(timer)
+    }
+  }, [])
 
-    return (
-        <>
-            <main className='max-w-[1440px] mx-auto  overflow-x-hidden '>
-                <Herosection />
-                <ProductOne />
-            </main>
-            <ProdcutBanner />
-            <ProductTwo />
-            <ProductsTree />
-            <BannerTwo />
-            <ProductsFour />
-            <ProdcutFive />
-            <BannerTree />
-            <Exercise />
-            <TopFooter />    
-            <Footer />
+  return (
+    <>
+      <main className="max-w-[1440px] mx-auto overflow-x-hidden">
+        <Herosection />
+        <ProductOne />
+      </main>
+      <ProdcutBanner />
+      <ProductTwo />
+      <ProductsTree />
+      <BannerTwo />
+      <ProductsFour />
+      <ProdcutFive />
+      <BannerTree />
+      <Exercise />
+      <TopFooter />
+      <Footer />
 
-
-
-
-            {showOverlay && <ToastContainer style={{zIndex:100001 , }}  />}
-            {loading && <Loading />}
-        </>
-    )
+      {showOverlay && <ToastContainer style={{ zIndex: 100001 }} />}
+      {loading && <Loading />}
+    </>
+  )
 }
 
 export default Main
-
-
-
-

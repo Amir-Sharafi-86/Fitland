@@ -128,14 +128,14 @@ function Navbar() {
                                           </div>
                     </div>
                   <div className="mt-5 px-5 pb-5">
-                  <div className="flex items-center justify-between border-t border-neutral-200 dark:border-white/10 pt-4 mb-5">
+                  <div className="flex items-center justify-between border-t font-MorabbaMedium border-neutral-200 dark:border-white/10 pt-4 mb-5">
                       <span>مبلغ قابل پرداخت:</span>
                       <div className="flex items-center gap-x-1">
                           <span className="text-lg font-danaDemiBold">
-                              1,200,000 <span className="font-danaMedium text-base">تومانءء</span>                    </span>
+                              1,200,000 <span className="font-danaMedium text-base">تومان</span>                    </span>
                       </div>
                   </div>
-                  <a href="https://sabzlearn.ir/cart" class="btn-orange font-MorabbaBold">مشاهده سبد خرید</a>
+                  <a href="https://sabzlearn.ir/cart" class="btn-orange font-MorabbaBold text-white">مشاهده سبد خرید</a>
               </div>
         </div>
                       </div>

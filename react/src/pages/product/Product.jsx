@@ -17,7 +17,6 @@ function Product() {
 
             <>
                 <Header />
-
                 <main className='max-w-[1440px] mx-auto'>
 
                 <section className='max-sm:mt-6 mt-[112px]'>
@@ -133,8 +132,7 @@ function Product() {
                 </section>
 
                 </main>
-
-                <Footer></Footer>
+                <Footer />
             </>
          )
 }
