@@ -5,8 +5,8 @@ import { useState } from 'react'
 import Overlay from '../overlay/overlay'
 import Link from 'next/link'
 function Navbar() {
-  const [isShow , setIsShow ] = useState(false)
-  const [isBasketOpen, setIsBasketOpen] = useState(false);
+  const [isShow , setIsShow ] = useState<boolean>(false)
+  const [isBasketOpen, setIsBasketOpen] = useState<boolean>(false);
 
   function showMenuMobile () {
     setIsShow(!isShow)
@@ -109,7 +109,6 @@ function Navbar() {
                             <div className="cart-item flex items-center gap-x-3">
                           <a href="https://sabzlearn.ir/course/game-dev-js/" className="shrink-0">
                               <img src="/images/main/shoesMain.png" className='h-15 aspect-video' alt="" />
-                              {/* <img className=" h-15 aspect-video rounded-lg" src="https://sabzlearn.ir/wp-content/uploads/2024/11/game-js-1-300x169.webp" alt="بازی سازی تحت وب با JS"`/> */}
                           </a>
                           <div className="flex flex-col justify-between font-MorabbaBold">
                               <a href="https://sabzlearn.ir/course/game-dev-js/" className="line-clamp-2 font-danaMedium text-sm">
@@ -136,7 +135,7 @@ function Navbar() {
                               1,200,000 <span className="font-danaMedium text-base ">تومان</span>                    </span>
                       </div>
                   </div>
-                  <a href="https://sabzlearn.ir/cart" class="btn-orange font-MorabbaBold text-white">مشاهده سبد خرید</a>
+                  <a href="https://sabzlearn.ir/cart" className="btn-orange font-MorabbaBold text-white">مشاهده سبد خرید</a>
               </div>
         </div>
                       </div>
@@ -150,7 +149,7 @@ function Navbar() {
 
         </div>
 
-        <NavMenu />
+        <NavMenu title='' />
       </div>
 
       {/* //? header menuMobile  */}

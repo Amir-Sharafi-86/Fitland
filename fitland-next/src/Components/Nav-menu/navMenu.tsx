@@ -1,14 +1,12 @@
 import React from 'react'
 
-interface NavMenuProps {
+
+
+type NavMenuProps  =  {
     title : string
 }
 
-tpye NavMenuProps  {
-    
-}
-
-function NavMenu({title}) {
+function NavMenu({title} : NavMenuProps) {
 
     return (
         <div>

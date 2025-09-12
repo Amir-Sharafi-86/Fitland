@@ -1,7 +1,19 @@
 "use client"
 import React , {useEffect} from 'react'
 import AOS from 'aos';
-function ProdcutsDetailsTree(props) {
+
+interface ProdcutsDetailsTreeProps  {
+     delay? : null | number
+     duration : null | number
+     img: string
+     title  :string
+     price  : number
+     size   : string | number
+     className?: string
+     isTrue?: boolean
+}
+
+function ProdcutsDetailsTree(props : ProdcutsDetailsTreeProps) {
    useEffect(() => {
         const handleScroll = () => {
           AOS.refresh();  
