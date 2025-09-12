@@ -10,29 +10,54 @@ function ProductTwo() {
     <div className='w-full bg-[#FFF7F4] mt-20 pb-9'>
       <h1 className=' text-base  md:text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold pt-8'>تخفیفات ویژه</h1>
       <div className='container mx-auto'>
-        <div className='relative hidden md:flex gap-x-2.5 bottom-4.5  '>  
-        <button 
-  className='cursor-pointer  rounded-full mb-8 p-2 swiper-button-next absolute top-1/2 right-0 w-10 h-10 -translate-y-1/2 z-20'
-  type="button"
-  aria-label="Next Slide"
->
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6">
-    <path strokeLinecap="round" strokeLinejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-  </svg>
-</button>
+      <div className="relative hidden md:flex justify-between items-center w-full">
+  <button
+    className="swiper-button-next absolute bottom-0 right-0 z-20 
+               flex items-center justify-center w-12 h-12 rounded-full 
+                text-white -translate-y-1/2"
+    type="button"
+    aria-label="Next Slide"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="m5.25 4.5 7.5 7.5-7.5 7.5"
+      />
+    </svg>
+  </button>
 
+  <button
+    className="swiper-button-prev absolute bottom-0 left-0 z-20 
+               flex items-center justify-center w-12 h-12 rounded-full 
+                text-white -translate-y-1/2"
+    type="button"
+    aria-label="Previous Slide"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="m18.75 4.5-7.5 7.5 7.5 7.5"
+      />
+    </svg>
+  </button>
+</div>
 
-
-          <button 
-            className='cursor-pointer  rounded-full mb-8 p-2 swiper-button-prev absolute top-2/2  size-10 -translate-y-1/2 z-20'
-            type="button"
-            aria-label="Previous Slide"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
-            </svg>
-          </button>
-        </div>
 
         <Swiper
           modules={[Autoplay, Navigation]}
