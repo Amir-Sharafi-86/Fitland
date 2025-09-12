@@ -11,12 +11,13 @@ import Detailsprodcut from './pages/detailsProduct/detailsprodcut';
 import Register from './pages/register/register';
 import EditInfo from './pages/dashboard/editInfo';
 import IndexPgaeUser from './pages/dashboard/indexPgaeUser/indexPgaeUser';
-// import IndexUserPgae from './pages/dashboard';
+
+
+
+
 const routes = [
   { path: '/', element: <Index /> },
-  // { path: '/dashboard', element: <Dashboard /> },
   { path: '/Product', element: <Product /> },
-  // { path: '*', element: <Notfound /> },
   { path: '*', element: <Notfound /> },
   { path: '/login', element: <Login /> },
   { path: '/register', element: <Register /> },

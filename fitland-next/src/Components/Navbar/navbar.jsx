@@ -1,8 +1,9 @@
+"use client"
 import React from 'react'
 import NavMenu from '../Nav-menu/navMenu'
 import { useState } from 'react'
 import Overlay from '../overlay/overlay'
-import {Link}  from "react-router-dom"
+import Link from 'next/link'
 function Navbar() {
   const [isShow , setIsShow ] = useState(false)
   const [isBasketOpen, setIsBasketOpen] = useState(false);
@@ -18,7 +19,7 @@ function Navbar() {
 
   return (
     <>
-
+  
       <div className="container px-6 pt-4 mx-auto lg:pt-9 header max-w-[1440px] hidden md:block">
         <div className="wrapper-navbar flex justify-between items-center gap-4 relative" >
 
@@ -56,7 +57,7 @@ function Navbar() {
 
           <div className="shrink-0 flex gap-x-4">
             <button className="bg-[#FFFFFF] flex flex-center gap-x-1.5 shadow-helper-class rounded-xl p-2.5">
-              <Link to={"/register"}>
+              <Link href={"/register"}>
                 <span className="text-[#404040] cursor-pointer text-sm md:text-base font-MorabbaBold">ثبت‌ نام | ورود</span>
               </Link>
               <svg

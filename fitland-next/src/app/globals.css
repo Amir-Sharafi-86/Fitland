@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;  
+}
+
+
+@theme {
+  --font-MorabbaLight : "Morabba Light";
+  --font-MorabbaBold : "Morabba Bold";
+  --font-MorabbaMedium : "Morabba Medium";
+
+  --color-midnight: #032340; 
+  --color-orange-noraml: #FA541C; 
+  --color-blue-noraml: #FA541C; 
+  --color-black-noraml: #FA541C; 
+  --color-black-main: #01070D; 
+  --color-black-mainTwo: #000306; 
+  --color-gray-main: #CBCBCB; 
+
+  --breakpoint-xs : 480px;
+}
+
+@layer utilities {
+  .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .loading__container {
+      backdrop-filter: blur(2rem);
+  }
+  .content-shadow {
+      background: linear-gradient(to top, rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0));
+  }
+  .shadow-helper-class {
+      box-shadow: 0px 0px 20px 2px #00000014;
+  }
+  .container {
+      @apply mx-auto px-4 lg:px-2.5
+  }   
+  .btn-orange {
+      @apply py-2 px-6 w-full flex gap-x-2   justify-center  rounded-md mt-4 bg-orange-noraml items-end;
+  }
+  .btn-midnight {
+      @apply py-2 px-6 w-full flex gap-x-2   justify-center  rounded-md mt-4 bg-midnight items-end;
+  }
+
+  .checkbox:checked + .markerr {
+      background-color: #003566;
+      border: none;
+      transition: all 50ms ease-in-out;
+  }
+  .toggle-btn__input:checked  + .toggle-btn__marker {
+      transition:  all 150ms;
+      background-color: #003566;
+      border: none;
+  }
+  .toggle-btn__input:checked  + .toggle-btn__marker::after {
+      right: 26px;
+  }
+
+  .flex-justify {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+ .box__shadow {
+      box-shadow:  0 4px 30px 4px #0000000F;
+ }
+}
+
+@layer components {
+  .toggle-btn__marker::after {
+      position: absolute;
+      top: 4px;
+      margin:  0 auto;
+      content: "";
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      background-color: white;
+      border-radius: 100%;
+      right:4px;
+  }
+ 
+  .markerelem::after {
+      content: "";
+      display: block;
+      right: 4px;
+      top: 4px;
+      bottom: 4px;
+      border-radius: 100%;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      display: block;
+      position: absolute;
+  }
+  .checkboxElemment:checked + .markerelem {
+      background-color: #032340;
+  }
+ 
+}
+
+@layer base {
+
+  body {
+      @apply font-MorabbaLight overflow-auto 
+  }
+
+  @font-face {
+      font-family: "Morabba Light";
+      src: url("/fonts/Morabba/woff2/Morabba-Light.woff2" );
+  }
+  @font-face {
+      font-family: "Morabba Medium";
+      src: url("/fonts/Morabba/woff2/Morabba-Medium.woff2" );
+  }
+  @font-face {
+      font-family: "Morabba Bold";
+      src: url("/fonts/Morabba/woff2/Morabba-Bold.woff2" );
+  }
+  
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FA541C ;
+}
+
+
+
