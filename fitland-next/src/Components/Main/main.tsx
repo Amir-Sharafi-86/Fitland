@@ -17,8 +17,8 @@ import { ToastContainer, toast } from 'react-toastify'
 import Loading from '@/Components/loading/loading'
 
 function Main() {
-  const [showOverlay, setShowOverlay] = useState(false)
-  const [loading, setLoding] = useState(false)
+  const [showOverlay, setShowOverlay] = useState<boolean>(false)
+  const [loading, setLoding] = useState<boolean>(false)
 
   useEffect(() => {
     const isFirstVisit = sessionStorage.getItem('firstVisitDone')

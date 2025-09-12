@@ -108,7 +108,7 @@ function Navbar() {
                 <div className="cart-body pl-5 pr-2.5 mr-2.5 space-y-4 max-h-62 overflow-y-auto direction-ltr child:direction-rtl">
                             <div className="cart-item flex items-center gap-x-3">
                           <a href="https://sabzlearn.ir/course/game-dev-js/" className="shrink-0">
-                              <img src="./public/images/main/shoesMain.png" className='h-15 aspect-video' alt="" />
+                              <img src="/images/main/shoesMain.png" className='h-15 aspect-video' alt="" />
                               {/* <img className=" h-15 aspect-video rounded-lg" src="https://sabzlearn.ir/wp-content/uploads/2024/11/game-js-1-300x169.webp" alt="بازی سازی تحت وب با JS"`/> */}
                           </a>
                           <div className="flex flex-col justify-between font-MorabbaBold">
@@ -121,7 +121,7 @@ function Navbar() {
                                       </div>
                                             </div>
                           </div>
-                                              <button className="text-gray-400 hover:text-red-500 mr-auto" onclick="sthe_remove_item_from_cart(83 , `528ca2f03c`)">
+                                              <button className="text-gray-400 hover:text-red-500 mr-auto" onClick={showBasket}>
                               <svg className="size-4 transition-colors">
                                   <use href="#trash"></use>
                               </svg>

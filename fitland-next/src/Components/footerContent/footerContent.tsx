@@ -3,17 +3,20 @@ import { useState } from 'react'
 
 function FooterContent() {
 
-    const [isToggle  , setIsToggle ] = useState(false)
-    const [isToggleTwo  , setIsToggleTwo ] = useState(false)
-    const [isToggleTree  , setIsToggleTree ] = useState(false)
 
-    const showBodyAccordion = async () => {
+
+
+    const [isToggle  , setIsToggle ] = useState<boolean>(false)
+    const [isToggleTwo  , setIsToggleTwo ] = useState<boolean>(false)
+    const [isToggleTree  , setIsToggleTree ] = useState<boolean>(false)
+
+    const showBodyAccordion =  () => {
           setIsToggle(!isToggle)
     }
-    const showBodyAccordion2 = async () => {
+    const showBodyAccordion2 =  () => {
           setIsToggleTwo(!isToggleTwo)
     }
-    const showBodyAccordion3 = async () => {
+    const showBodyAccordion3 =  () => {
           setIsToggleTree(!isToggleTree)
     }
 

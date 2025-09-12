@@ -1,9 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 
-function Filtering({setIsShowFilter}) {
+interface setIsShowDropProp {
+    setIsShowDrop : (value : boolean ) => void;
+}
+function Filtering({setIsShowFilter} : setIsShowDropProp) {
 
-    const [isShowDrop , setIsShowDrop ] = useState(false)
+
+    const [isShowDrop , setIsShowDrop ] = useState<boolean>(false)
 
 
     const handleDrop =  () => {

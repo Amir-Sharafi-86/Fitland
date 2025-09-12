@@ -1,6 +1,15 @@
 import React from 'react'
 
+interface NavMenuProps {
+    title : string
+}
+
+tpye NavMenuProps  {
+    
+}
+
 function NavMenu({title}) {
+
     return (
         <div>
             <div className="hidden lg:block mt-10">
