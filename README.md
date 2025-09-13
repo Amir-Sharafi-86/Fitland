@@ -42,3 +42,18 @@ fitland/
 │ ├── styles/ # Global styles
 │── package.json
 │── README.md
+
+## ✨ Features
+- Modern and fully responsive design
+
+- Product listing & product details pages
+
+- Shopping cart functionality
+
+- User authentication (Register / Login)
+
+- Built with Next.js App Router
+
+- Styled with TailwindCSS
+
+- Type safety with TypeScript
