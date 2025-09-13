@@ -34,8 +34,6 @@ npm run dev
 
 ## 📂 Folder Structure
 
-<details>
-  <summary>Click to expand</summary>
 
 ```text
 fitland/
@@ -49,7 +47,6 @@ fitland/
 └── README.md
 ```
 
-</details>
 
 
 ## ✨ Features
