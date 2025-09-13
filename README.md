@@ -34,14 +34,23 @@ npm run dev
 
 ## 📂 Folder Structure
 
+<details>
+  <summary>Click to expand</summary>
+
+```text
 fitland/
-│── public/ # Images and assets
-│── src/
-│ ├── app/ # Main pages (cart, login, product, register)
-│ ├── components/ # Reusable UI components
-│ ├── styles/ # Global styles
-│── package.json
-│── README.md
+├── public/            # Images and assets
+├── src/
+│   ├── app/           # Main pages (cart, login, product, register)
+│   ├── components/    # Reusable UI components
+│   ├── styles/        # Global styles
+│   └── ...
+├── package.json
+└── README.md
+```
+
+</details>
+
 
 ## ✨ Features
 - Modern and fully responsive design
