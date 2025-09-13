@@ -20,14 +20,14 @@ but also to practice real-world front-end development skills and improve my work
 
 ## 🚀 Installation & Setup  
 
-# Clone the repository
+## Clone the repository
 git clone https://github.com/Amir-Sharafi-86/Fitland.git
 
-# Navigate into the project folder
+## Navigate into the project folder
 cd Fitland
 
-# Install dependencies
+## Install dependencies
 npm install
 
-# Run the development server
+## Run the development server
 npm run dev
