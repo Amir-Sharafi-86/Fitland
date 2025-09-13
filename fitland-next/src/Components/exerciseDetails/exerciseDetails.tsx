@@ -2,10 +2,13 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 
 interface ExerciseDetailsProp {
-  delay?: number | null;
+  delay?: number | null | string;
   duration?: number | string;
   img: string;
   title: string;
+  price : number | string
+  size : number | string
+  isTrue : boolean | string
 }
 
 function ExerciseDetails(props: ExerciseDetailsProp) {

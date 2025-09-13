@@ -3,14 +3,13 @@ import React , {useEffect} from 'react'
 import AOS from 'aos';
 
 interface ProdcutsDetailsTreeProps  {
-     delay? : null | number
-     duration : null | number
+     delay? : string  | number
+     duration? : string | number
      img: string
      title  :string
-     price  : number
+     price  : number | string
      size   : string | number
      className?: string
-     isTrue?: boolean
 }
 
 function ProdcutsDetailsTree(props : ProdcutsDetailsTreeProps) {
@@ -36,15 +35,11 @@ function ProdcutsDetailsTree(props : ProdcutsDetailsTreeProps) {
                         <div className='relative sm:aspect-[3/2.2] overflow-hidden'>
                             <img src={props.img} className='rounded-md w-full max-sm:h-[280px]' />
                         </div>
-                        {
-                            props.isTrue === "true" ? (
+                         
                                 <div className="bg-[#FA541C]  size-10 rounded-full absolute flex-center text-[#000000] top-2 text-base left-2 ">VIP</div>
 
-                            ) : (
 
                                 <div className="bg-[#67AAE6]  size-10 rounded-full absolute flex-center text-[#000000] top-2 text-base left-2 ">24 % </div>
-                            )
-                        }
 
                         <div className='flex flex-col  mt-4 text-[15px]  font-MorabbaMedium gap-y-3 pr-4'>
                             <span className='text-[#01070D]  text-base md:text-xl'>{props.title}</span>

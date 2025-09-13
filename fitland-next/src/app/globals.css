@@ -84,6 +84,20 @@
       border-radius: 100%;
       right:4px;
   }
+
+ 
+  .menu___item:hover  .submenu__wrapper  {
+    visibility: visible;
+    opacity: 100%;
+  }
+
+  .submenu__wrapper {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 150ms ease-in;
+   
+    
+  }
  
   .markerelem::after {
       content: "";

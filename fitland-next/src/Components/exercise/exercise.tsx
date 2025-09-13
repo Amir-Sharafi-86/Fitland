@@ -96,12 +96,14 @@ function Exercise() {
                   img="/images/main/exersiceTwo.png"
                   delay="0"
                   duration="1200"
+                  isTrue
                  
                   
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <ExerciseDetails
+                isTrue
                   title="شکست استرالیا در گام نخست جام جهانی فوتبال زنان!"
                   price="۳۰۰,۰۰۰ تومان"
                   size="از سایز L تا XXL"

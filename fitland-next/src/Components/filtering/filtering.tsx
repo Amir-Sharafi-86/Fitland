@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 
 interface setIsShowDropProp {
-    setIsShowDrop : (value : boolean ) => void;
+    setIsShowFilter : (value : boolean ) => void;
 }
 function Filtering({setIsShowFilter} : setIsShowDropProp) {
 

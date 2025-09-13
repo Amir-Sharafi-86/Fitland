@@ -5,8 +5,8 @@ import Link from "next/link";
 function ProductOne() {
     return (
         <div className='my-[80px] container flex  justify-center sm:justify-between items-end gap-4.5 md:gap-9'>
-                 <ProductDetailsOne  title="جدید ترین تخفیفات فصل برند نایک" text = " تخفیف روی تمام محصولات "  duration="2500" deley="1200" img="/images/main/product.jpg" />
-                 <ProductDetailsOne  title="جدید ترین تخفیفات فصل برند پوما" text = " تخفیف روی تمام محصولات "  duration="2500" deley="1200" img="/images/main/product2.png" />
+                 <ProductDetailsOne  title="جدید ترین تخفیفات فصل برند نایک" text = " تخفیف روی تمام محصولات "  duration="1500" delay="500" img="/images/main/product.jpg" />
+                 <ProductDetailsOne  title="جدید ترین تخفیفات فصل برند پوما" text = " تخفیف روی تمام محصولات "  duration="1500" delay="500" img="/images/main/product2.png" />
           
             
         <div className="title hidden lg:block">

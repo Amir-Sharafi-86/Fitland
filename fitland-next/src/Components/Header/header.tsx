@@ -4,7 +4,7 @@ import Navbar from '../Navbar/navbar'
 function Header() {
     return (
         
-        <header className='relative max-md:z-50 bg-white'>
+        <header className='relative max-md:z-50 bg-white '>
             <Topbar />
             
             <Navbar  />

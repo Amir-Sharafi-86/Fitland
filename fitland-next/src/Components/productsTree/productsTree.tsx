@@ -56,70 +56,123 @@ function ProductsTree() {
     </svg>
   </button>
 </div>
+
+<Swiper
+          modules={[Autoplay, Navigation]}
+          spaceBetween={20}
+          slidesPerView={2}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          breakpoints={{
+            768: { slidesPerView: 3 },
+          }}
+        >
+        
+           <SwiperSlide>
+            <ProdcutsDetailsTree
+              title="ست نایک مدل S-2000"
+              price="۳۰۰,۰۰۰ تومان"
+              size="از سایز L تا XXL"
+              img="/images/main/shoesMain.png"
+              delay="0"
+              duration="800"
+              
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ProdcutsDetailsTree
+              title="ست نایک مدل S-2000"
+              price="۳۰۰,۰۰۰ تومان"
+              size="از سایز L تا XXL"
+              img="/images/main/mainDress.png"
+              delay="0"
+              duration="800"
+
+              
+            />
+          </SwiperSlide>
+           <SwiperSlide>
+            <ProdcutsDetailsTree
+              title="ست نایک مدل S-2000"
+              price="۳۰۰,۰۰۰ تومان"
+              size="از سایز L تا XXL"
+              img="/images/main/shoesMain.png"
+              delay="0"
+              duration="800"
+
+              
+            />
+          </SwiperSlide>
+
+           <SwiperSlide>
+            <ProdcutsDetailsTree
+              title="ست نایک مدل S-2000"
+              price="۳۰۰,۰۰۰ تومان"
+              size="از سایز L تا XXL"
+              img="/images/main/mainDress.png"
+              delay="0"
+              duration="800"
+            />
+          </SwiperSlide>
+       
+
+       
+        </Swiper>
     
-            <Swiper
-              modules={[Autoplay, Navigation]}
-              spaceBetween={20}
-              slidesPerView={2}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }}
-              breakpoints={{
-                768: { slidesPerView: 3 },
-              }}
-            >
-                 <SwiperSlide>
-                <ProdcutsDetailsTree
-                  title="سویشرت نایک مدل AO-14"
-                  price="۳۰۰,۰۰۰ تومان"
-                  size="از سایز L تا XXL"
-                  img="/images/main/shoesMain.png"
-                  delay="0"
-                  duration="800"
-                  
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <ProdcutsDetailsTree
-                  title="سویشرت نایک مدل AO-14"
-                  price="۳۰۰,۰۰۰ تومان"
-                  size="از سایز L تا XXL"
-                  img="/images/main/mainDress.png"
-                  isTrue = "true"
-                />
-              </SwiperSlide>
-    
-             
-    
-              <SwiperSlide>
-      <ProdcutsDetailsTree
-        title="کفش نایک مدل S-2000"
-        price="۲۰۰۰۰۰ تومان"
-        size="از سایز L تا XXL"
-        img="/images/main/shoesMain.png"
-        delay="200"
-        duration="800"
-    
-      />
-    </SwiperSlide>
-    
-    
-              <SwiperSlide>
-                <ProdcutsDetailsTree
-                  title="کفش نایک مدل S-2000"
-                  price="۲۰۰۰۰۰ تومان"
-                  size="از سایز L تا XXL"
-                  img="/images/main/mainDress.png"
-                 delay="400"
-                 duration="800"
-                />
-              </SwiperSlide>
-            </Swiper>
+{/* <SwiperSlide>
+  <ProdcutsDetailsTree
+    title="سویشرت نایک مدل AO-14"
+    price="۳۰۰,۰۰۰ تومان"
+    size="از سایز L تا XXL"
+    img="/images/main/shoesMain.png"
+    delay={0}
+    duration={800}
+    isTrue={true}   
+  />
+</SwiperSlide>
+
+<SwiperSlide>
+  <ProdcutsDetailsTree
+    title="سویشرت نایک مدل AO-14"
+    price="۳۰۰,۰۰۰ تومان"
+    size="از سایز L تا XXL"
+    img="/images/main/mainDress.png"
+    delay={200}
+    duration={800}
+    isTrue={false}  
+  />
+</SwiperSlide>
+
+<SwiperSlide>
+  <ProdcutsDetailsTree
+    title="کفش نایک مدل S-2000"
+    price="۲۰۰۰۰۰ تومان"
+    size="از سایز L تا XXL"
+    img="/images/main/shoesMain.png"
+    delay={200}
+    duration={800}
+    isTrue={true}   
+  />
+</SwiperSlide>
+
+<SwiperSlide>
+  <ProdcutsDetailsTree
+    title="کفش نایک مدل S-2000"
+    price="۲۰۰۰۰۰ تومان"
+    size="از سایز L تا XXL"
+    img="/images/main/mainDress.png"
+    delay={400}
+    duration={800}
+    isTrue={false}
+  />
+</SwiperSlide> */}
+
           </div>
         </div>
       );

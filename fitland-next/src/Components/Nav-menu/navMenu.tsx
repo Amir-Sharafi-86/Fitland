@@ -1,22 +1,37 @@
-import React from 'react'
-
-
+import React, { useState } from 'react'
+import Overlay from '../overlay/overlay';
+import { boolean } from 'yup';
 
 type NavMenuProps  =  {
     title : string
 }
 
 function NavMenu({title} : NavMenuProps) {
+    const [isoverLay , setIsOverLay ] = useState(false)
 
     return (
         <div>
-            <div className="hidden lg:block mt-10">
+            <div className={`hidden lg:block mt-10 `}>
                 <div className="wrapper-menu  ">
                     <ul className='text-[#000306] text-xs  lg:text-base font-MorabbaBold flex justify-between bg-[#F9F9F9] py-4 px-10 rounded-2xl '>
                         <div className="left-menu flex  gap-x-5 lg:gap-x-10">
                         <a href="">مردانه</a>
                             <a href="">زنانه</a>
-                            <a href="">بچگانه</a>
+                            <li className='relative menu___item hover:text-orange-noraml'
+
+                              onMouseEnter={() => setIsOverLay(true)} 
+                              onMouseLeave={() => setIsOverLay(false)}
+                            >
+                                <a  className='flex-center gap-x-1' href="#">محصولات 
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+    </svg>
+
+                                </a>
+                                
+                            </li>
+
                             <a href="">لوازم ورزشی </a>
                             <a href="">شیکر و جاگ</a>
                         </div>
@@ -48,6 +63,7 @@ function NavMenu({title} : NavMenuProps) {
                     </ul>
                 </div>
             </div>
+            {isoverLay && <Overlay onClick={() => setIsOverLay(false)} />}
         </div>
     )
 }

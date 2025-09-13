@@ -4,6 +4,7 @@ import NavMenu from '../Nav-menu/navMenu'
 import { useState } from 'react'
 import Overlay from '../overlay/overlay'
 import Link from 'next/link'
+import Image from 'next/image'
 function Navbar() {
   const [isShow , setIsShow ] = useState<boolean>(false)
   const [isBasketOpen, setIsBasketOpen] = useState<boolean>(false);
@@ -24,7 +25,7 @@ function Navbar() {
         <div className="wrapper-navbar flex justify-between items-center gap-4 relative" >
 
           <div className="flex items-center gap-2 flex-col">
-            <img src="/images/header/logo.png" alt="" />
+            <Image width={150} height={150}  className='w-auto' src="/images/header/logo.png" alt="" />
             <h6 className="text-sm text-[#868686] font-MorabbaBold whitespace-nowrap">فروشگاه لوازم ورزشی فیت‌لند</h6>
           </div>
 

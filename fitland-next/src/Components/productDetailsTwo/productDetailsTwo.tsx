@@ -4,8 +4,8 @@ import AOS from "aos"
 import Link from "next/link"
 
 interface ProductDetailsTwoProps {
-  delay?: number | null
-  duration?: number | null
+  delay?: number | null | string
+  duration?: number | null | string
   img: string
   title: string
   price: string | number

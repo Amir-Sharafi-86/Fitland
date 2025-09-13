@@ -3,8 +3,8 @@ import React, { useEffect } from "react"
 import AOS from "aos"
 
 interface ProductDetailsOneProps {
-  delay?: number | null
-  duration?: number | null
+  delay:string
+  duration: number | string
   img: string
   title: string
   text: string
