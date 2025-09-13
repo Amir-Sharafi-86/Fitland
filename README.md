@@ -8,10 +8,10 @@ working with **dynamic routing** in Next.js, managing the **cart system**,
 and creating reusable **UI components** to keep the code clean and scalable.  
 
 
-
 The goal of this project was not only to build a modern online shop,  
-but also to practice real-world front-end development skills and improve my workflow with modern tools.
-I am going to connect project to BackEndApi
+but also to practice real-world front-end development skills and improve my workflow with modern tools.  
+In the next step, I am planning to connect the project to a **Back-End API** to handle dynamic data.
+
 
 ## 🛠️ Technologies used   
 
