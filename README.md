@@ -74,4 +74,4 @@ fitland/
 
 ## 👨‍💻 Author
 - GitHub: [Amir-Sharafi-86](https://github.com/Amir-Sharafi-86)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- LinkedIn: [amir-sharafi-805955340](https://www.linkedin.com/in/amir-sharafi-805955340/)
