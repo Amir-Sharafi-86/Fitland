@@ -11,7 +11,7 @@ and creating reusable **UI components** to keep the code clean and scalable.
 
 The goal of this project was not only to build a modern online shop,  
 but also to practice real-world front-end development skills and improve my workflow with modern tools.
-
+I am going to connect project to BackEndApi
 
 ## 🛠️ Technologies used   
 
@@ -63,6 +63,14 @@ fitland/
 - Styled with TailwindCSS
 
 - Type safety with TypeScript
+
+
+## 🏗️ Project Architecture
+- **Frontend:** Next.js + React + TypeScript  
+- **Styling:** TailwindCSS  
+- **State Management:** (e.g., Context API)  
+- **Build Tool:** Vite  
+
 
 ## 👨‍💻 Author
 - GitHub: [Amir-Sharafi-86](https://github.com/Amir-Sharafi-86)
