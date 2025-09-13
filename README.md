@@ -1,12 +1,13 @@
-# React + Vite
+# 🏋️‍♂️ FitLand Online Shop  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**FitLand** یک فروشگاه آنلاین تجهیزات ورزشی است که با **Next.js**, **TypeScript** و **TailwindCSS** ساخته شده.  
+این پروژه شامل صفحات کامل (خانه، محصولات، سبد خرید، ثبت‌نام/ورود و ...) است و طراحی ریسپانسیو و مدرن دارد.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies used   
 
-## Expanding the ESLint configuration
+<img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,git,github,postman,figma,npm,vite,react,nextjs,typescript" />
+ Fitland Online Shop  
+  <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,git,github,postman,figma,npm,vite,react,nextjs,typescript">
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
