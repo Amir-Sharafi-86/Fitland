@@ -33,11 +33,12 @@ npm install
 npm run dev
 
 ## 📂 Folder Structure
+
 fitland/
-│── public/           # Images and assets
+│── public/ # Images and assets
 │── src/
-│   ├── app/          # Main pages (cart, login, product, register)
-│   ├── components/   # Reusable UI components
-│   ├── styles/       # Global styles
+│ ├── app/ # Main pages (cart, login, product, register)
+│ ├── components/ # Reusable UI components
+│ ├── styles/ # Global styles
 │── package.json
 │── README.md
