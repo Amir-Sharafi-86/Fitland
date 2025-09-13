@@ -1,6 +1,6 @@
 # 🏋️‍♂️ FitLand Online Shop  
 
-##   About Project
+##  📖   About Project
 **FitLand** is an online sports equipment store built with **Next.js**, **TypeScript**, and **TailwindCSS**.  
 This project was a great learning experience for me and came with many challenges.  
 Some of the key challenges included implementing a **fully responsive design** for different devices,  
@@ -17,5 +17,17 @@ but also to practice real-world front-end development skills and improve my work
 
   <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,vite,react,nextjs,typescript"> 
 
- ## 🚀 Installation & Usage 
- - git 
+
+## 🚀 Installation & Setup  
+
+# Clone the repository
+git clone https://github.com/Amir-Sharafi-86/Fitland.git
+
+# Navigate into the project folder
+cd Fitland
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
