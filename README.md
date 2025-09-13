@@ -63,3 +63,7 @@ fitland/
 - Styled with TailwindCSS
 
 - Type safety with TypeScript
+
+## 👨‍💻 Author
+- GitHub: [Amir-Sharafi-86](https://github.com/Amir-Sharafi-86)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
