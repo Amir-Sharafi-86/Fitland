@@ -13,20 +13,14 @@ function NavMenu({title} : NavMenuProps) {
         <div>
             <div className={`hidden lg:block mt-10 `}>
                 <div className="wrapper-menu  ">
-                    <ul className='text-[#000306] text-xs  lg:text-base font-MorabbaBold flex justify-between bg-[#F9F9F9] py-4 px-10 rounded-2xl '>
+                    <ul className='text-[#000306] text-xs hover:text-orange-norage transition-colors   lg:text-base font-MorabbaBold flex justify-between bg-[#F9F9F9] py-4 px-10 rounded-2xl '>
                         <div className="left-menu flex  gap-x-5 lg:gap-x-10">
                         <a href="">مردانه</a>
                             <a href="">زنانه</a>
-                            <li className='relative menu___item hover:text-orange-noraml'
+                            <li className='relative menu___item ml'
 
-                              onMouseEnter={() => setIsOverLay(true)} 
-                              onMouseLeave={() => setIsOverLay(false)}
                             >
-                                <a  className='flex-center gap-x-1' href="#">محصولات 
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-    </svg>
+                                <a  className='flex-center gap-x-1' href="#"> محصولات 
 
                                 </a>
                                 
