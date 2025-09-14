@@ -1,5 +1,11 @@
 # 🏋️‍♂️ FitLand Online Shop  
 
+
+## 🎥 Demo Video
+
+https://github.com/Amir-Sharafi-86/Fitland/raw/main/public/demo.mp4
+
+
 ##  📖   About Project
 **FitLand** is an online sports equipment store built with **Next.js**, **TypeScript**, and **TailwindCSS**.  
 This project was a great learning experience for me and came with many challenges.  
