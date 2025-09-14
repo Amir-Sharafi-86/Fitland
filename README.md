@@ -82,4 +82,4 @@ fitland/
 - LinkedIn: [amir-sharafi-805955340](https://www.linkedin.com/in/amir-sharafi-805955340/)
 
 ## 🎥 Demo 
-<img src="public/demo/Screenshot (354).png" />
+<img src="/fitland-next/public/demo.mp4" />
