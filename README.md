@@ -83,3 +83,12 @@ fitland/
 
 ## 🎥 Demo 
 <img src="/fitland-next/public/demo/Screenshot (354).png" />
+<img src="/fitland-next/public/demo/Screenshot (355).png" />
+<img src="/fitland-next/public/demo/Screenshot (356).png" />
+<img src="/fitland-next/public/demo/Screenshot (357).png" />
+<img src="/fitland-next/public/demo/Screenshot (358).png" />
+<img src="/fitland-next/public/demo/Screenshot (359).png" />
+<img src="/fitland-next/public/demo/Screenshot (360).png" />
+<img src="/fitland-next/public/demo/Screenshot (361).png" />
+<img src="/fitland-next/public/demo/Screenshot (362).png" />
+<img src="/fitland-next/public/demo/Screenshot (363).png" />
