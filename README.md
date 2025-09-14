@@ -3,8 +3,9 @@
 
 ## 🎥 Demo Video
 
-https://github.com/Amir-Sharafi-86/Fitland/raw/main/public/demo.mp4
-
+<video src="https://github.com/Amir-Sharafi-86/Fitland/raw/main/public/demo.mp4" 
+       controls max-width ="100%">
+</video
 
 ##  📖   About Project
 **FitLand** is an online sports equipment store built with **Next.js**, **TypeScript**, and **TailwindCSS**.  
