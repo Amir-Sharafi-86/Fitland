@@ -44,11 +44,20 @@ function Detailsprodcut() {
                                     <div className='size mt-4 relative'>
                                         <div className="header flex-justify cursor-pointer w-[242px] " >
                                             <span className='text-lg md:text-xl lg:text-2xl text-black-mainTwo font-MorabbaMedium'>سایز</span>
+                                            {isActive === false   ? (
+
                                             <svg xmlns="http://www.w3.org/2000/svg" 
                                             onClick={() => setIsActive(!isActive)}
                                             fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 text-[#ADADAD]">
   <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
 </svg>
+                                            ) : (
+                                                <svg xmlns="http://www.w3.org/2000/svg" 
+                                                onClick={() => setIsActive(!isActive)}
+                                                fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 rotate-180 text-[#ADADAD]">
+      <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+    </svg>
+                                            )}
 
                                         </div>
 
@@ -93,11 +102,11 @@ function Detailsprodcut() {
                                     </div>
 
                                     <div className='mt-5  justify-between max-lg:gap-x-5 hidden lg:flex'>
-                                            <button className='border-2 flex-center text-orange-noraml border-orange-noraml px-8 h-14 rounded-sm'>
+                                            <button className='border-2 flex-center  text-orange-noraml font-MorabbaMedium border-orange-noraml px-8 h-14 rounded-sm'>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 text-orange-noraml">
     <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
     </svg>
-                                                <h1 className='font-MorabbaMedium'>1</h1>
+                                                <h1 className='text-xl max-sm:text-base'>1</h1>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 text-orange-noraml">
     <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
     </svg>
@@ -105,7 +114,7 @@ function Detailsprodcut() {
 
                                             </button>
 
-                                            <button className='bg-orange-noraml flex-center text-white gap-x-2 font-MorabbaMedium w-1/2 rounded-md '>
+                                            <button className='bg-orange-noraml  cursor-pointer flex-center text-white gap-x-2 font-MorabbaMedium w-1/2 rounded-md '>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
 </svg>
