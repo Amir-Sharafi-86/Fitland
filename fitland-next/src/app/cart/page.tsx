@@ -1,10 +1,8 @@
 import React from 'react'
 import Header from '@/Components/Header/header'
 
-interface Props {}
 
-function Page(props: Props) {
-  const {} = props
+function Page() {
 
   return (
     <>
