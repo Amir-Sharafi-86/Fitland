@@ -1,6 +1,7 @@
 "use client"
 import React , {useEffect} from 'react'
 import AOS from 'aos';
+import Link from 'next/link';
 
 interface ProdcutsDetailsTreeProps  {
      delay? : string  | number
@@ -27,6 +28,7 @@ function ProdcutsDetailsTree(props : ProdcutsDetailsTreeProps) {
     return (
         
         <div  className={props.className}>
+                 <Link  href={"/product/1"}>
                     <div className="box-prodcut pt-0 pb-20  border border-[#EDEDED] bg-white   " data-aos="fade-up"  
                     data-aos-delay={props.delay}
                       data-aos-duration={props.duration}
@@ -56,6 +58,7 @@ function ProdcutsDetailsTree(props : ProdcutsDetailsTreeProps) {
                             <div className="componetns bg-[#000306] size-4.5  rounded-full"></div>
                         </div>
                     </div>
+                 </Link>
         </div>
     )
 }
