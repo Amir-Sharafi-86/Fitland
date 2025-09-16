@@ -90,8 +90,8 @@ function FooterContent() {
               <h1 className="mb-4 text-sm text-white font-MorabbaBold">
                 فروشگاه اینترنتی فیت‌لند
               </h1>
-              <p className="max-w-[650px] text-[#F9F9F9] text-xs font-MorabbaBold leading-[1.7] max-lg:mb-8">
-                فروشگاه لوازم ورزشی فیت‌لند در سال 1403 کار خود را...
+              <p className="max-w-[650px] text-[#F9F9F9] text-xs font-MorabbaBold leading-[1.9] max-lg:mb-8">
+              فروشگاه لوازم ورزشی فیت‌لند در سال 1403 کار خود را به صورت حرفه ای آغاز کرد و با هدف ارائه جدیدترین محصولات ورزشی از قبیل لوازم فوتبال، فوتسال، والیبال، بسکتبال، تنیس و... همچنین پوشاک ورزشی و تجهیزات سفر، از برند های معتبر دنیا در محیطی کاربرپسند، قابل اطمینان و با مجربترین مشاوران و کارشناسان ورزشی فعالیت می کند. فروشگاه فیت‌لند دارای نماد اعتماد از وزارت صنعت معدن و تجارت می باشد و تمامی محصولات خود را با 7 روز ضمانت بازگشت همراه با گارانتی اصالت و سلامت فیزیکی، با سریع ترین روش های ارسال به سراسر ایران در اختیار مشتریان خود قرار می دهد.
               </p>
             </div>
             <div className="icon flex flex-col items-center">
@@ -114,10 +114,20 @@ function FooterContent() {
               <span className="text-[#EDEDED] text-sm font-MorabbaMedium max-xl:mr-[3rem] sm:mr-[5rem]">راهنمای خرید</span>
               <button className="border cursor-pointer border-[#EDEDED] rounded-full p-0.5" onClick={showBodyAccordion}>
                 {/* SVG Arrow */}
+                {isToggle === false ? (
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3 text-white">
+  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+</svg>
+
+                )  : (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3 text-white rotate-180">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+                )}
               </button>
             </div>
-            <div className="body-accordion transition-[10s] w-[80%]">
-              <p className={`text-white mb-4 mt-4 ${isToggle ? 'block' : 'hidden'}`}>
+            <div className="body-accordion transition-all ">
+              <p className={`text-white mb-4 mt-4 w-[75%]  mx-auto ${isToggle ? 'block' : 'hidden'}`}>
                 برای خرید با کیفیت و بهتر با پشتیبان ما در ارتباط باشید
               </p>
             </div>
@@ -127,11 +137,22 @@ function FooterContent() {
             <div className="header flex justify-between items-end w-[80%] max-xs:w-[88%]">
               <span className="text-[#EDEDED] text-sm font-MorabbaMedium max-xl:mr-[3rem] sm:mr-[5rem]">محبوب‌ترین‌ها</span>
               <button className="border cursor-pointer border-[#EDEDED] rounded-full p-0.5" onClick={showBodyAccordion2}>
-                {/* SVG Arrow */}
+             {/* SVG Arrow */}
+             {isToggleTwo === false ? (
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3 text-white">
+  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+</svg>
+
+                )  : (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3 text-white rotate-180">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+                )}
+
               </button>
             </div>
-            <div className="body-accordion transition-[10s] w-[80%]">
-              <p className={`text-white mb-4 mt-4 ${isToggleTwo ? 'block' : 'hidden'}`}>
+            <div className="body-accordion transition-all ">
+              <p className={`text-white mb-4 mt-4 w-[75%]  mx-auto ${isToggleTwo ? 'block' : 'hidden'}`}>
                 برای خرید با کیفیت و بهتر با پشتیبان ما در ارتباط باشید
               </p>
             </div>
@@ -141,11 +162,21 @@ function FooterContent() {
             <div className="header flex justify-between items-end w-[80%] max-xs:w-[88%]">
               <span className="text-[#EDEDED] text-sm font-MorabbaMedium max-xl:mr-[3rem] sm:mr-[5rem]">اطلاعات تماس</span>
               <button className="border cursor-pointer border-[#EDEDED] rounded-full p-0.5" onClick={showBodyAccordion3}>
-                {/* SVG Arrow */}
+                   {/* SVG Arrow */}
+                   {isToggleTree === false ? (
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3 text-white">
+  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+</svg>
+
+                )  : (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3 text-white rotate-180">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+                )}
               </button>
             </div>
-            <div className="body-accordion transition-[10s] w-[80%]">
-              <p className={`text-white mb-4 mt-4 ${isToggleTree ? 'block' : 'hidden'}`}>
+            <div className="body-accordion transition-all ">
+              <p className={`text-white mb-4 mt-4 w-[75%]  mx-auto ${isToggleTree ? 'block' : 'hidden'}`}>
                 برای خرید با کیفیت و بهتر با پشتیبان ما در ارتباط باشید
               </p>
             </div>
@@ -153,8 +184,8 @@ function FooterContent() {
         </div>
 
         {/* Mobile Text */}
-        <div className="content__text lg:hidden mr-[4rem] max-w-[79%] text-white">
-          فروشگاه لوازم ورزشی فیت‌لند در سال 1403 کار خود را...
+        <div className="content__text lg:hidden mr-[3rem] max-w-[79%] text-white">
+        فروشگاه لوازم ورزشی فیت‌لند در سال 1403 کار خود را به صورت حرفه ای آغاز کرد و با هدف ارائه جدیدترین محصولات ورزشی از قبیل لوازم فوتبال، فوتسال، والیبال، بسکتبال، تنیس و... همچنین پوشاک ورزشی و تجهیزات سفر، از برند های معتبر دنیا در محیطی کاربرپسند، قابل اطمینان و با مجربترین مشاوران و کارشناسان ورزشی فعالیت می کند. فروشگاه فیت‌لند دارای نماد اعتماد از وزارت صنعت معدن و تجارت می باشد و تمامی محصولات خود را با 7 روز ضمانت بازگشت همراه با گارانتی اصالت و سلامت فیزیکی، با سریع ترین روش های ارسال به سراسر ایران در اختیار مشتریان خود قرار می دهد.
         </div>
 
         <div className="icon hidden flex-col items-center max-sm:flex mt-10">
