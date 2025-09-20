@@ -21,8 +21,8 @@ function ProductOne() {
 تحویل
  بگیرید
 </span>
-
-                    <button className='btn-orange flex justify-center items-end'>
+<Link href={"/product"} className='text-white text-base max-sm:text-xs whitespace-nowrap max-sm:w-full font-MorabbaBold' >
+                    <button className='btn-orange flex justify-center cursor-pointer items-end'>
                     <svg
   xmlns="http://www.w3.org/2000/svg"
   fill="none"
@@ -37,10 +37,10 @@ function ProductOne() {
     d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
   />
 </svg>
-           <Link href={"/product"} className='text-white text-base max-sm:text-xs whitespace-nowrap max-sm:w-full font-MorabbaBold' >
+          
            مشاهده همه محصولات
-           </Link>
                     </button>
+           </Link>
 
         </div>
 

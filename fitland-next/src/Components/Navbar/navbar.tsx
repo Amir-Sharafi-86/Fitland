@@ -27,7 +27,9 @@ function Navbar() {
         <div className="wrapper-navbar flex justify-between items-center gap-4 relative" >
 
           <div className="flex items-center gap-2 flex-col">
-            <Image width={150} height={150}  className='w-auto' src="/images/header/logo.png" alt="" />
+            <Link href={"/"}>
+               <Image width={150} height={150}  className='w-auto' src="/images/header/logo.png" alt="" />
+            </Link>
             <h6 className="text-sm text-[#868686] font-MorabbaBold whitespace-nowrap">فروشگاه لوازم ورزشی فیت‌لند</h6>
           </div>
 
@@ -106,15 +108,15 @@ function Navbar() {
               <div className="w-80 xs:w-[362px] bg-white dark:bg-darker rounded-lg">
           <div className="flex items-center font-MorabbaMedium justify-between px-5 py-4 bg-sky-50 dark:bg-sky-500/10 text-sky-500 mb-5 rounded-t-2xl">
               <span className="">سبد خرید من</span>
-              <span className="font-danaDemiBold text-slate-500">1 دوره</span>
+              <span className="font-danaDemiBold text-slate-500">1 محصول</span>
           </div>
                 <div className="cart-body pl-5 pr-2.5 mr-2.5 space-y-4 max-h-62 overflow-y-auto direction-ltr child:direction-rtl">
                             <div className="cart-item flex items-center gap-x-3">
-                          <a href="https://sabzlearn.ir/course/game-dev-js/" className="shrink-0">
+                          <a href="" className="shrink-0">
                               <img src="/images/main/shoesMain.png" className='h-15 aspect-video' alt="" />
                           </a>
                           <div className="flex flex-col justify-between font-MorabbaBold">
-                              <a href="https://sabzlearn.ir/course/game-dev-js/" className="line-clamp-2 font-danaMedium text-sm">
+                              <a href="#" className="line-clamp-2 font-danaMedium text-sm">
                     بازی سازی تحت وب با JS                        </a>
                               <div className="flex items-center gap-x-2 text-slate-500 dark:text-gray-400">
                                                                     <div className="flex items-center gap-x-1">
@@ -138,7 +140,7 @@ function Navbar() {
                               1,200,000 <span className="font-danaMedium text-base ">تومان</span>                    </span>
                       </div>
                   </div>
-                  <a href="https://sabzlearn.ir/cart" className="btn-orange font-MorabbaBold text-white">مشاهده سبد خرید</a>
+                  <a href="" className="btn-orange font-MorabbaBold text-white">مشاهده سبد خرید</a>
               </div>
         </div>
                       </div>
@@ -178,19 +180,21 @@ function Navbar() {
         <div className="w-full sm:w-[400px] lg:w-[600px] xl:max-w-[700px] mx-auto mt-4">
           <form action="">
             <div className="relative w-full border border-[#CBCBCB] bg-[#F9F9F9] rounded-2xl">
-              <svg
-                className="absolute left-3 top-1/2 -translate-y-1/2 text-[#FA541C]"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="#FA541C"
-                  d="M11.5 21.75c-5.65 0-10.25-4.6-10.25-10.25S5.85 1.25 11.5 1.25s10.25 4.6 10.25 10.25-4.6 10.25-10.25 10.25m0-19c-4.83 0-8.75 3.93-8.75 8.75s3.92 8.75 8.75 8.75 8.75-3.93 8.75-8.75-3.92-8.75-8.75-8.75M21.998 22.75c-.19 0-.38-.07-.53-.22l-2-2a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l2 2c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22"
-                ></path>
-              </svg>
+              <button type='submit'>
+                    <svg
+                      className="absolute left-3 top-1/2 -translate-y-1/2 text-[#FA541C]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#FA541C"
+                        d="M11.5 21.75c-5.65 0-10.25-4.6-10.25-10.25S5.85 1.25 11.5 1.25s10.25 4.6 10.25 10.25-4.6 10.25-10.25 10.25m0-19c-4.83 0-8.75 3.93-8.75 8.75s3.92 8.75 8.75 8.75 8.75-3.93 8.75-8.75-3.92-8.75-8.75-8.75M21.998 22.75c-.19 0-.38-.07-.53-.22l-2-2a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l2 2c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22"
+                      ></path>
+                    </svg>
+              </button>
               <input
                 type="text"
                 className="w-full pl-10 pr-4 py-2 bg-transparent outline-none placeholder:text-[#868686] font-MorabbaMedium"

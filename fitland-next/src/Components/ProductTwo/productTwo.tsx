@@ -9,7 +9,7 @@ function ProductTwo() {
   return (
     <div className='w-full bg-[#FFF7F4] mt-20 pb-9'>
       <h1 className=' text-base  md:text-[32px] text-[#021526] text-center mb-8 font-MorabbaBold pt-8'>تخفیفات ویژه</h1>
-      <div className='container mx-auto'>
+      <div className='container '>
       <div className="relative hidden md:flex justify-between items-center w-full">
   <button
     className="swiper-button-next absolute bottom-0 right-0 z-20 
@@ -92,7 +92,7 @@ function ProductTwo() {
               title="ست نایک مدل S-2000"
               price="۳۰۰,۰۰۰ تومان"
               size="از سایز L تا XXL"
-              img="/images/main/dressProduct.png"
+              img="/images/main/mainDress.png"
               delay="0"
               duration="800"
               

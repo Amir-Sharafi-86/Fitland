@@ -16,12 +16,12 @@ function Login() {
 
         validationSchema: Yup.object({
           phone: Yup.string()
-              .min(11, 'Must be at least 11 digits')
-              .required("Phone number is required"),
+              .min(11, 'شماره تلفن نباید کمتر از 11 عدد باشد')
+              .required("پر کردن فیلد اجباری است "),
           password: Yup.string()
-              .min(8, 'Password must be exactly 8 characters')
-              .max(8, 'Password must be exactly 8 characters')
-              .required("Password is required"),
+              .min(8, 'پسورد نباید کمتر از 8 عدد باشد ')
+              .max(12, 'پسورد نباید بیشتر از12 عدد باشد ')
+              .required("پر کردن فیلد اجباری است "),
         }),
 
         onSubmit  : (values) => {
@@ -38,7 +38,7 @@ function Login() {
     {/* Right side: Login form */}
     <div className="w-1/2 flex justify-center items-center bg-white">
       <div className="form w-full sm:w-[456px] border border-[#EDEDED] p-8.5">
-        <h1 className='text-[#000000] text-[28px] mb-8 font-MorabbaMedium'>ورود</h1>
+        <h1 className='text-[#000000]  text-[28px] mb-8 font-MorabbaMedium'>ورود</h1>
 
         {/* Formik form */}
         <form onSubmit={formik.handleSubmit} >
@@ -50,7 +50,7 @@ function Login() {
             onBlur={formik.handleBlur}
             value={formik.values.phone}
             type="text" 
-            placeholder='phone' 
+            placeholder='ایمیل' 
             className='placeholder:text-[#ADADAD] py-2 px-3 placeholder:text-sm placeholder:font-MorabbaMedium border border-[#ADADAD] w-full rounded-lg outline-none text-black focus:outline-none focus:border focus:border-orange-noraml' 
           />
           {formik.touched.phone && formik.errors.phone && (
@@ -67,7 +67,7 @@ function Login() {
             onBlur={formik.handleBlur}
             value={formik.values.password}
             type="password" 
-            placeholder='password' 
+            placeholder='پسورد' 
             className='placeholder:text-[#ADADAD] mt-4 py-2 px-3 placeholder:text-sm placeholder:font-MorabbaMedium border border-[#ADADAD] w-full rounded-lg outline-none text-black focus:outline-none focus:border focus:border-orange-noraml' 
           />
           {formik.touched.password && formik.errors.password && (
@@ -77,12 +77,13 @@ function Login() {
           )}
           
           {/* Submit button */}
-          <button type="submit" className='btn-orange text-white font-MorabbaBold mt-4'>
+          <button type="submit" className='btn-orange cursor-pointer text-white font-MorabbaBold mt-4'>
             ادامه
           </button>
           <Link href={`/register`}>
-              <span className='text-black text-[14.5px] font-MorabbaBold mt-4 flex-center inline-block'>
-                حساب کاربری ندارید ؟ ثبت نام کنید
+              <span className='text-black gap-x-1 text-[14.5px] font-MorabbaBold mt-4 flex-center inline-block'>
+              حساب کاربری ندارید؟      <span className='text-orange-noraml'>ثبت نام کنید</span>       
+
               </span>
           </Link>
         </form>

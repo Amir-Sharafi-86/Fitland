@@ -19,13 +19,13 @@ function ProductsFourDetails(props) {
             <div  className={props.className}>
                         <Link href={"/product/1"}>
                         
-                        <div className="box-prodcut pt-0 pb-20  border border-[#EDEDED] bg-white   " data-aos="fade-up"  
+                        <div className="box-prodcut rounded-lg pt-0 pb-20  border border-[#EDEDED] bg-white   " data-aos="fade-up"  
                         data-aos-delay={props.delay}
                           data-aos-duration={props.duration}
                         >
     
                             <div className='relative sm:aspect-[3/2.1.75] overflow-hidden'>
-                                <img src={props.img} className='rounded-md size-full object-cover max-sm:h-[270px]' />
+                                <img src={props.img} className='rounded-tl-lg rounded-tr-lg size-full object-cover max-sm:h-[270px]' />
                             </div>
                             {
                                 props.isTrue === "true" ? (

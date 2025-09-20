@@ -29,13 +29,13 @@ function ProdcutsDetailsTree(props :ProdcutsDetailsTreeProps) {
         
         <div  className={props.className}>
                  <Link  href={"/product/1"}>
-                    <div className="box-prodcut pt-0 pb-20  border border-[#EDEDED] bg-white   " data-aos="fade-up"  
+                    <div className="box-prodcut rounded-lg pt-0 pb-20  border border-[#EDEDED] bg-white   " data-aos="fade-up"  
                     data-aos-delay={props.delay}
                       data-aos-duration={props.duration}
                     >
 
                         <div className='relative sm:aspect-[3/2.2] overflow-hidden'>
-                            <img src={props.img} className='rounded-md size-full object-cover max-sm:h-[270px]' />
+                            <img src={props.img} className='rounded-tl-lg rounded-tr-lg size-full object-cover max-sm:h-[270px]' />
                         </div>
                          
                                 <div className="bg-[#FA541C]  size-10 rounded-full absolute flex-center text-[#000000] top-2 text-base left-2 ">VIP</div>

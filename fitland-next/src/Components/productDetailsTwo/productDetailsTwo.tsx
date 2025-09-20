@@ -29,7 +29,7 @@ function ProductDetailsTwo(props: ProductDetailsTwoProps) {
     <div className={props.className}>
       <Link href={`/product/1`}>
         <div
-          className="box-prodcut cursor-pointer pt-0 pb-20 border border-[#EDEDED] bg-white"
+          className="box-prodcut rounded-lg cursor-pointer pt-0 pb-20 border border-[#EDEDED] bg-white"
           data-aos="fade-up"
           data-aos-delay={props.delay ?? undefined}
           data-aos-duration={props.duration ?? undefined}
@@ -37,7 +37,7 @@ function ProductDetailsTwo(props: ProductDetailsTwoProps) {
           <div className="relative sm:aspect-[3/2.1] overflow-hidden">
             <img
               src={props.img}
-              className="rounded-md size-full object-cover max-sm:h-[270px]"
+              className="rounded-tl-lg rounded-tr-lg  size-full object-cover max-sm:h-[270px]"
             />
           </div>
 
