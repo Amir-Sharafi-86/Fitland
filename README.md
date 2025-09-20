@@ -80,7 +80,7 @@ fitland/
 ## 👨‍💻 Author
 - GitHub: [Amir-Sharafi-86](https://github.com/Amir-Sharafi-86)
 - LinkedIn: [amir-sharafi-805955340](https://www.linkedin.com/in/amir-sharafi-805955340/)
-- preview : https://fitland-rust.vercel.app/
+- preview  : https://fitland-gamma.vercel.app/
 
 ## 🎥 Demo 
 <img src="/fitland-next/public/demo/Screenshot (354).png" />
