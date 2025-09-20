@@ -13,11 +13,13 @@ function Navbar() {
     setIsShow(!isShow)
     
   }
-
   function showBasket () {
       setIsBasketOpen(!isBasketOpen)
   }
 
+  function handlePage () {
+    setIsShow(false)
+  }
   return (
     <>
   
@@ -208,10 +210,10 @@ function Navbar() {
       
       bg-whtie py-5 text-caption flex-col`}>
                 
-                <a href="#" className="w-full text-center py-2 hover:bg-gray-100 rounded">خانه</a>
-                <button className="w-full text-center py-2 hover:bg-gray-100 rounded">خدمات</button>
-                <button className="w-full text-center py-2 hover:bg-gray-100 rounded">مشاورین</button>
-                <button className="w-full text-center py-2 hover:bg-gray-100 rounded">سوالات متداول</button>
+                <Link href={'/'} onClick={handlePage}  className="w-full text-center py-2 hover:bg-gray-100 rounded">خانه</Link>
+                <Link href={"/product"} className="w-full text-center py-2 hover:bg-gray-100 rounded">همه محصولات</Link>
+                <Link href={"/"} onClick={handlePage} className="w-full text-center py-2 hover:bg-gray-100 rounded">مشاورین</Link>
+                <Link href={"/"} onClick={handlePage} className="w-full text-center py-2 hover:bg-gray-100 rounded">سوالات متداول</Link>
                 
     </div>
                   

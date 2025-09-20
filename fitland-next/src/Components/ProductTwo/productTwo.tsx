@@ -92,7 +92,7 @@ function ProductTwo() {
               title="ست نایک مدل S-2000"
               price="۳۰۰,۰۰۰ تومان"
               size="از سایز L تا XXL"
-              img="/images/main/mainDress.png"
+              img="/images/main/dressProduct.png"
               delay="0"
               duration="800"
               

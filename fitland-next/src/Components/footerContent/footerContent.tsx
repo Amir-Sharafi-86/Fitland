@@ -58,10 +58,9 @@ function FooterContent() {
             </h1>
             <div className="flex-center gap-x-11.5 mt-4 max-lg:mb-9">
               {/* SVG Icons */}
-              {/* ... محتوای SVG تغییر نکرد */}
             </div>
 
-            <div>
+            <div className='max-xs:-ml-3'>
               <h1 className="text-white text-sm font-MorabbaBold mt-6 mb-2">
                 خبرنامه فیت‌لند
               </h1>

@@ -4,7 +4,7 @@ import Header from "@/Components/Header/header"
 import { useState } from 'react'
 
 import BoxComment from '@/Components/boxCommnet/boxComment'
-import ProdcutsDetailsTree from '@/Components/ProdcutsDetailsTree/ProdcutsDetailsTree'
+import ProdcutsDetailsThree from "@/Components/ProdcutsDetailsThree/ProdcutsDetailsThree"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -135,6 +135,7 @@ function Detailsprodcut() {
                                     </div>
 
                                     <div className='lg:hidden mt-10 flex items-center justify-between'>
+                                        
                                     <button className='border-2 flex-center text-orange-noraml border-orange-noraml py-2 px-12  rounded-sm'>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 text-orange-noraml">
     <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />

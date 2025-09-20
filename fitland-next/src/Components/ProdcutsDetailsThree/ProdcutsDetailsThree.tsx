@@ -13,7 +13,7 @@ interface ProdcutsDetailsTreeProps  {
      className?: string
 }
 
-function ProdcutsDetailsTree(props : ProdcutsDetailsTreeProps) {
+function ProdcutsDetailsTree(props :ProdcutsDetailsTreeProps) {
    useEffect(() => {
         const handleScroll = () => {
           AOS.refresh();  
@@ -35,7 +35,7 @@ function ProdcutsDetailsTree(props : ProdcutsDetailsTreeProps) {
                     >
 
                         <div className='relative sm:aspect-[3/2.2] overflow-hidden'>
-                            <img src={props.img} className='rounded-md w-full max-sm:h-[280px]' />
+                            <img src={props.img} className='rounded-md size-full object-cover max-sm:h-[270px]' />
                         </div>
                          
                                 <div className="bg-[#FA541C]  size-10 rounded-full absolute flex-center text-[#000000] top-2 text-base left-2 ">VIP</div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function ProdcutBanner() {
@@ -18,12 +19,12 @@ function ProdcutBanner() {
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
           </svg>
-          <a
-            href="#"
+          <Link 
+            href={"/product"}
             className="text-white text-base max-sm:text-xs whitespace-nowrap max-sm:w-full py-2 px-6 font-MorabbaBold"
           >
             مشاهده محصولات
-          </a>
+          </Link>
         </button>
       </div>
     </div>

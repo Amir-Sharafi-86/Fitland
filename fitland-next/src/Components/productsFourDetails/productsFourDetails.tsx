@@ -25,7 +25,7 @@ function ProductsFourDetails(props) {
                         >
     
                             <div className='relative sm:aspect-[3/2.1.75] overflow-hidden'>
-                                <img src={props.img} className='rounded-md  max-sm:h-[280px]' />
+                                <img src={props.img} className='rounded-md size-full object-cover max-sm:h-[270px]' />
                             </div>
                             {
                                 props.isTrue === "true" ? (

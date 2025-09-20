@@ -37,7 +37,7 @@ function ProductDetailsTwo(props: ProductDetailsTwoProps) {
           <div className="relative sm:aspect-[3/2.1] overflow-hidden">
             <img
               src={props.img}
-              className="rounded-md w-full h-full lg:object-cover max-sm:h-[280px]"
+              className="rounded-md size-full object-cover max-sm:h-[270px]"
             />
           </div>
 

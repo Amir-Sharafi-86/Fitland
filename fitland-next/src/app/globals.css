@@ -38,7 +38,7 @@
       box-shadow: 0px 0px 20px 2px #00000014;
   }
   .container {
-      @apply mx-auto px-4 lg:px-2.5
+      @apply mx-auto px-4.5 lg:px-2.5
   }   
   .btn-orange {
       @apply py-2 px-6 w-full flex gap-x-2   justify-center  rounded-md mt-4 bg-orange-noraml items-end;
