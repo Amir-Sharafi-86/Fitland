@@ -23,7 +23,7 @@ function Product() {
                 <section className='max-sm:mt-6 mt-[112px]'>
                   <div className="container ">
                     <div className='lg:grid lg:grid-cols-12   '>
-                        <div className="filter-box max-lg:hidden border p-[17px] w-[288px] h-[350px] border-[#CBCBCB] py-4 px-4.5 rounded-2xl bg-white lg:col-span-2  " >
+                        <div className="filter-box   max-lg:hidden border p-[17px] w-[288px] h-[350px] border-[#CBCBCB] py-4 px-4.5 rounded-2xl bg-white lg:col-span-2  " >
                          
                           <div className="header-filter flex-justify mb-4 text-sm font-MorabbaMedium">
                             <span className=' text-black-mainTwo font-MorabbaMedium'>فیلترها</span>
@@ -91,19 +91,19 @@ function Product() {
                             </ul>
                           </div>
 
-                          <div className="wrapper__box mt-6 max-sm:hidden grid grid-cols-3 gap-6 mb-[121px]">
-                            <DetailsProductBox></DetailsProductBox>
-                            <DetailsProductBox></DetailsProductBox>
-                            <DetailsProductBox></DetailsProductBox>
-                            <DetailsProductBox></DetailsProductBox>
-                            <DetailsProductBox></DetailsProductBox>
-                            <DetailsProductBox></DetailsProductBox>
-                            <DetailsProductBox></DetailsProductBox>
-                            <DetailsProductBox></DetailsProductBox>
-                            <DetailsProductBox></DetailsProductBox>
-                            <DetailsProductBox></DetailsProductBox>
-                            <DetailsProductBox></DetailsProductBox>
-                            <DetailsProductBox></DetailsProductBox>
+                          <div className="wrapper__box   mt-6 max-sm:hidden grid grid-cols-3 gap-6 mb-[121px]">
+                                <DetailsProductBox></DetailsProductBox>
+                                <DetailsProductBox></DetailsProductBox>
+                                <DetailsProductBox></DetailsProductBox>
+                                <DetailsProductBox></DetailsProductBox>
+                                <DetailsProductBox></DetailsProductBox>
+                                <DetailsProductBox></DetailsProductBox>
+                                <DetailsProductBox></DetailsProductBox>
+                                <DetailsProductBox></DetailsProductBox>
+                                <DetailsProductBox></DetailsProductBox>
+                                <DetailsProductBox></DetailsProductBox>
+                                <DetailsProductBox></DetailsProductBox>
+                                <DetailsProductBox></DetailsProductBox>
                           </div>
       
                           {isShowFilter === true && (

@@ -117,7 +117,7 @@ function Navbar() {
                           </a>
                           <div className="flex flex-col justify-between font-MorabbaBold">
                               <a href="#" className="line-clamp-2 font-danaMedium text-sm">
-                    بازی سازی تحت وب با JS                        </a>
+                              کفش مردانه اسپرت                       </a>
                               <div className="flex items-center gap-x-2 text-slate-500 dark:text-gray-400">
                                                                     <div className="flex items-center gap-x-1">
                                           <span className="font-danaMedium text-sm">
