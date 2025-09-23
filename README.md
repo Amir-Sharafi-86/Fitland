@@ -73,14 +73,14 @@ fitland/
 ## 🏗️ Project Architecture
 - **Frontend:** Next.js + React + TypeScript  
 - **Styling:** TailwindCSS  
-- **State Management:** (e.g., Context API)  
+- **State Management:** (Context API)  
 - **Build Tool:** Vite  
 
 
 ## 👨‍💻 Author
 - GitHub: [Amir-Sharafi-86](https://github.com/Amir-Sharafi-86)
 - LinkedIn: [amir-sharafi-805955340](https://www.linkedin.com/in/amir-sharafi-805955340/)
-- preview  : https://fitland-gamma.vercel.app/
+- preview  : https://fitland-sandy.vercel.app/
 
 ## 🎥 Demo 
 <img src="/fitland-next/public/demo/Screenshot (354).png" />
