@@ -59,7 +59,7 @@ function ProductsFour() {
     
             <Swiper
               modules={[Autoplay, Navigation]}
-              spaceBetween={20}
+              spaceBetween={45}
               slidesPerView={2}
               autoplay={{
                 delay: 3000,

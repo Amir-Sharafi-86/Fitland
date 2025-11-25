@@ -16,10 +16,10 @@ function ProdcutFive() {
 از سفر لذت ببر
 </span>
 
-                    <button className='btn-orange flex justify-center items-end'>
+                    <a href='/product' className='btn-orange flex justify-center text-white text-base max-sm:text-xs whitespace-nowrap max-sm:w-full font-MorabbaBold items-end'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 text-white border border-white rounded-full p-0.5"><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path></svg>
-                    <a href="" className="text-white text-base max-sm:text-xs whitespace-nowrap max-sm:w-full font-MorabbaBold">مشاهده همه محصولات</a>
-                    </button>
+                               مشاهده همه محصولات
+                    </a>
 
         </div>
 
