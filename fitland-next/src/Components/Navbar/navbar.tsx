@@ -5,8 +5,7 @@ import { useState } from 'react'
 import Overlay from '../overlay/overlay'
 import Link from 'next/link'
 import Image from 'next/image'
-function Navbar() {
-  const [isShow , setIsShow ] = useState<boolean>(false)
+function Navbar({setIsShow , isShow}) {
   const [isBasketOpen, setIsBasketOpen] = useState<boolean>(false);
     
     function showMenuMobile () {
