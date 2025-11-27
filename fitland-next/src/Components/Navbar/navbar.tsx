@@ -8,10 +8,10 @@ import Image from 'next/image'
 function Navbar() {
   const [isShow , setIsShow ] = useState<boolean>(false)
   const [isBasketOpen, setIsBasketOpen] = useState<boolean>(false);
-  
-  function showMenuMobile () {
-    setIsShow(!isShow)
-  }
+    
+    function showMenuMobile () {
+      setIsShow(!isShow)
+    }
   function showBasket () {
       setIsBasketOpen(!isBasketOpen)
   }

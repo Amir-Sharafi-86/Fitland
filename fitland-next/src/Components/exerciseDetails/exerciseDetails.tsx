@@ -42,29 +42,6 @@ function ExerciseDetails(props: ExerciseDetailsProp) {
           خبرها حاکی از آن است که رییس فدراسیون فوتبال اعلام کرد در فصل جاری
           قرار داد هر بازیکن فوتبال 50 درصد افزایش پیدا میکند همچنین وی گفت...
         </p>
-      <Link href={"/"}
-            className="text-white text-base max-sm:text-xs whitespace-nowrap max-sm:w-full font-MorabbaBold"
-          >
-        <button className="py-2 px-5 cursor-pointer bg-orange-noraml rounded-lg flex-center gap-x-2 mt-8 mr-4 mb-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="size-5 text-white border border-white rounded-full p-0.5"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-            />
-          </svg>
-
-        
-            مشاهده خبر
-        </button>
-    </Link>
       </div>
     </Link>
   );

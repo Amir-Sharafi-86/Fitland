@@ -6,7 +6,7 @@ import Navbar from '../Navbar/navbar'
 function Header() {
       const [isShow , setIsShow ] = useState<boolean>(false)
       console.log(isShow);
-      
+            
     return (
         
         <header className={`relative max-md:z-50 bg-white `}>
