@@ -27,7 +27,7 @@ function Product() {
                          
                           <div className="header-filter flex-justify mb-4 text-sm font-MorabbaMedium">
                             <span className=' text-black-mainTwo font-MorabbaMedium'>فیلترها</span>
-                            <span className='text-[#868686]'>حذف فیلترها</span>
+                            <a href='#' className='text-[#868686]'>حذف فیلترها</a>
                           </div>
 
 

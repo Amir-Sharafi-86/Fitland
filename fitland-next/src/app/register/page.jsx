@@ -48,8 +48,8 @@ function Register() {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.phone}
-            type="text" 
-            placeholder='ایمیل' 
+            type="phone" 
+            placeholder='شماره تلفن' 
             className='placeholder:text-[#ADADAD] py-2 px-3 placeholder:text-sm placeholder:font-MorabbaMedium border border-[#ADADAD] w-full rounded-lg outline-none text-black focus:outline-none focus:border focus:border-orange-noraml' 
           />
           {formik.touched.phone && formik.errors.phone && (

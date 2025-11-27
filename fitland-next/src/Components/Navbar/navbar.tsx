@@ -8,10 +8,9 @@ import Image from 'next/image'
 function Navbar() {
   const [isShow , setIsShow ] = useState<boolean>(false)
   const [isBasketOpen, setIsBasketOpen] = useState<boolean>(false);
-
+  
   function showMenuMobile () {
     setIsShow(!isShow)
-    
   }
   function showBasket () {
       setIsBasketOpen(!isBasketOpen)
@@ -61,10 +60,8 @@ function Navbar() {
 
 
           <div className="shrink-0 flex gap-x-4">
-            <button className="bg-[#FFFFFF] flex flex-center gap-x-1.5 shadow-helper-class rounded-xl p-2.5">
-              <Link href={"/register"}>
+            <Link href={"/register"} className="bg-[#FFFFFF] flex flex-center gap-x-1.5 shadow-helper-class rounded-xl p-2.5">
                 <span className="text-[#404040] cursor-pointer text-sm md:text-base font-MorabbaBold">ثبت‌ نام | ورود</span>
-              </Link>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -79,11 +76,11 @@ function Navbar() {
                   d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
                 />
               </svg>
-            </button>
+            </Link>
 
                 <div className=''>
                   
-                 <button className="bg-orange-noraml p-3 relative rounded-xl z-999 cursor-pointer" onClick={showBasket}>
+                 <button className={`bg-orange-noraml p-3 relative rounded-xl ${isBasketOpen ? 'z-999' : ""} cursor-pointer`} onClick={showBasket}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -160,7 +157,7 @@ function Navbar() {
       {/* //? header menuMobile  */}
 
                   
-      <div className="mobile-menu p-6 block md:hidden">
+      <div className="mobile-menu p-6 block md:hidden ">
         <div className="flex justify-between items-center">
           <img src="/images/header/logo.png" className="w-[90px]" alt="" />
           <button className='cursor-pointer' onClick={showMenuMobile}>
